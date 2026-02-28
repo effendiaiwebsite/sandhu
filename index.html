@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satinder Pal Singh Sandhu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+    <!-- Three.js Canvas - particle starfield -->
+    <canvas id="starfield"></canvas>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Satinder Pal<br>Singh Sandhu</h1>
+                <div class="hero-degrees">
+                    <span class="degree-tag">B.Tech Mechanical Engineering</span>
+                    <span class="degree-tag">B.Tech Digital Forensics &amp; Cybersecurity</span>
+                </div>
+                <p class="hero-tagline">Builder. Engineer. Problem Solver.</p>
+                <a href="#timeline" class="hero-cta">View My Journey <span class="arrow-down">&darr;</span></a>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <img src="images/Satinder San (1).png" alt="Satinder Pal Singh Sandhu" class="hero-photo">
+                    <div class="hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ========== TIMELINE SECTION ========== -->
+    <!-- Scroll spacer: gives scroll distance for the 3D camera to travel -->
+    <div id="timeline-scroll-track">
+        <!-- 3D scene rendered into #starfield canvas via JS -->
+        <!-- HUD overlay: year label + milestone text shown at each stop -->
+        <div id="timeline-hud">
+            <div id="hud-year"></div>
+            <div id="hud-title"></div>
+            <div id="hud-desc"></div>
+            <div id="hud-link-wrap"></div>
+            <div id="hud-badges"></div>
+            <div id="hud-progress">
+                <div id="hud-progress-bar"></div>
+                <div id="hud-progress-dots"></div>
+            </div>
+        </div>
+        <!-- Floating HTML image cards that are positioned in 3D-ish space via JS -->
+        <div id="timeline-img-layer"></div>
+    </div>
+
+    <!-- Hidden data source for the JS to read -->
+    <div id="timeline-data" style="display:none">
+        <div data-year="2016" data-title="Graduated B.Tech&#10;Mechanical Engineering"
+             data-desc="" data-link="https://pec.ac.in" data-link-label="Punjab Engineering College, Chandigarh ↗"
+             data-images="images/bTechDegree.png"
+             data-image-alts="B.Tech Degree"
+             data-badges=""></div>
+        <div data-year="2017" data-title="Frieden Electric — Startup Chile"
+             data-desc="Founded Frieden Electric to help farmers ensure high yield. Received a $15,000 grant from the Chile Government, a one-year residency visa, and co-working space in Santiago."
+             data-link="https://www.tribuneindia.com/news/chandigarh/pec-start-up-wins-rs10-lakh/" data-link-label="PEC start-up wins Rs10 lakh — The Tribune ↗"
+             data-images="images/startupchile.jpg"
+             data-image-alts="Frieden Electric at Startup Chile"
+             data-badges="$15,000 Grant|Chile Residency|PEC Incubated"></div>
+        <div data-year="2019" data-title="Came to Canada"
+             data-desc="Started from the ground up with hard work and determination."
+             data-link="" data-link-label=""
+             data-images="images/labour1.jpg|images/labor2.jpg|images/labor3.jpg"
+             data-image-alts="Labour work|Labour work|Labour work"
+             data-badges=""></div>
+        <div data-year="2021"
+             data-title="Freelance Software Developer"
+             data-desc="Building real-world web &amp; software products for Canadian businesses and beyond."
+             data-link="" data-link-label=""
+             data-parade="true"
+             data-images="images/screenshots/IJT/mainScreen.png|images/screenshots/GatorBookkeeping/websiteHome.png|images/screenshots/HousesinBC/mainScreen.png|images/screenshots/SalesCRM/salespersonDashboard.png"
+             data-image-alts="IJT — Institute for Job Training|Gator Bookkeeping|Houses in BC|Sales CRM"
+             data-image-links="https://ijttopper.com|https://gatorbookkeeping.com|https://housesinbc.com|https://a2z-i77d.onrender.com"
+             data-app-descs="Exam prep platform for Indian students targeting government jobs — choose 8th, 10th or 12th pass level, browse 50+ exams, and practice with mock tests and progress tracking.|Professional bookkeeping &amp; tax filing with a secure online client portal and admin CRM. CPA-approved — 1,547+ returns filed and $2.3M in total savings.|Step-by-step home buying guide for first-time buyers in BC. Browse listings, calculate mortgages, explore government incentives, and book consultations through a full realtor admin portal.|Full sales CRM with separate admin and salesperson portals — manage leads, track daily calls and meetings, generate quotes, and monitor team performance in real time."
+             data-secondary-images="images/screenshots/IJT/availableExams.png|images/screenshots/IJT/examInfo.png|images/screenshots/IJT/numberSystem.png||images/screenshots/GatorBookkeeping/admindashboard.png|images/screenshots/GatorBookkeeping/clientDashboard.png||images/screenshots/HousesinBC/admindashboardScreen.png|images/screenshots/HousesinBC/mortgageCalculator.png|images/screenshots/HousesinBC/homeBuyerdashboardScreen.png||images/screenshots/SalesCRM/adminDashboard.png|images/screenshots/SalesCRM/quoteGenerator.png"
+             data-badges="4 Apps Built|Full-Stack|Web &amp; Mobile"></div>
+        <div data-year="2025" data-title="Pivoting into Cybersecurity"
+             data-desc="Enrolled at BCIT — B.Tech Digital Forensics &amp; Cybersecurity (Forensic Investigation). Started building the foundation: earned CompTIA A+ and currently studying for Network+. Actively seeking cybersecurity roles to gain hands-on experience."
+             data-link="" data-link-label=""
+             data-images="images/compTIAA.png"
+             data-image-alts="CompTIA A+ Certification"
+             data-image-links=""
+             data-badges="CompTIA A+|Network+ In Progress|BCIT|Open to Work"></div>
+    </div>
+
+    <!-- ========== CONTACT / HIRE ME ========== -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Let's Work Together</h2>
+            <p class="contact-subtitle">I build things that matter. If you're looking for someone who ships — let's talk.</p>
+            <div class="contact-links">
+                <a href="mailto:satinder@example.com" class="contact-btn primary">
+                    <span class="btn-icon">&#9993;</span> Email Me
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="contact-btn">
+                    <span class="btn-icon">in</span> LinkedIn
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener" class="contact-btn">
+                    <span class="btn-icon">&lt;/&gt;</span> GitHub
+                </a>
+                <a href="images/CV_SatinderPalSingh (1).pdf" target="_blank" class="contact-btn">
+                    <span class="btn-icon">&#128196;</span> Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

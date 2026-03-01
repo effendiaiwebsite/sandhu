@@ -249,7 +249,7 @@ a {
     position: relative;
     z-index: 1;
     /* Non-parade milestones = same as 600vh; parade section gets 3× more room */
-    height: 900vh;
+    height: 650vh;
 }
 
 /* HUD — fixed overlay shown during timeline scroll */

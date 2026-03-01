@@ -679,10 +679,6 @@
     const lookOffset   = new THREE.Vector3(); // pre-allocated — reused every frame, avoids GC
     let   prevT        = 0;                   // for frame-rate independent delta time
 
-    // Tracks the localT value at which closestIdx first became paradeIdx.
-    // adjustedLocalT is computed from this, so IJT always starts at 0 when the
-    // parade gate opens — no matter how long the camera lerp takes.
-    let paradeActivatedAtLocalT = null;
 
     function animate() {
         requestAnimationFrame(animate);
@@ -803,24 +799,6 @@
 
             // ---- Parade cards: horizontal scroll-driven showcase ----
             if (paradeIdx >= 0 && paradeCards.length > 0) {
-                // Self-calibrating parade start:
-                // Record localT the first time closestIdx becomes paradeIdx (camera has
-                // physically left Canada). adjustedLocalT starts from 0 at that exact moment,
-                // so IJT always gets its full window with zero overlap with 2019.
-                if (closestIdx === paradeIdx && paradeActivatedAtLocalT === null) {
-                    paradeActivatedAtLocalT = localT;
-                }
-                if (closestIdx !== paradeIdx) {
-                    paradeActivatedAtLocalT = null; // reset if user scrolls back
-                }
-
-                const remaining = paradeActivatedAtLocalT !== null
-                    ? Math.max(0.01, 1 - paradeActivatedAtLocalT)
-                    : 1;
-                const adjustedLocalT = paradeActivatedAtLocalT !== null
-                    ? THREE.MathUtils.clamp((localT - paradeActivatedAtLocalT) / remaining, 0, 1)
-                    : 0;
-
                 // APP_WEIGHTS and appSlices are pre-computed once at init (not per-frame)
                 const PW = VW, PH = VH;
                 // Use module-level cached sizes (recomputed only on resize, not per frame)
@@ -828,9 +806,11 @@
                 const CARD_H = PARADE_CARD_H;
                 const nCards = paradeCards.length;
 
-                // Show parade cards only when camera has confirmed it's at the Freelance node.
-                // adjustedLocalT starts from 0 at that exact moment → IJT never missed.
-                if (closestIdx === paradeIdx && paradeActivatedAtLocalT !== null) {
+                // localT is 0 at parade entry going down, 1 at entry going up —
+                // works symmetrically in both scroll directions.
+                const adjustedLocalT = localT;
+
+                if (closestIdx === paradeIdx) {
                     paradeCards.forEach((card, idx) => {
                         // Each card owns its non-uniform slice of adjustedLocalT
                         const slice   = appSlices[idx];
@@ -899,7 +879,7 @@
                     const appT2     = (adjustedLocalT - slice2.center) / slice2.half;
                     const posT      = (appT2 + 1) / 2;
                     // Wide dwell window — matches the same PARADE_START gate as main cards
-                    const inDwell   = closestIdx === paradeIdx && paradeActivatedAtLocalT !== null && posT > 0.05 && posT < 0.95;
+                    const inDwell   = closestIdx === paradeIdx && posT > 0.05 && posT < 0.95;
                     const dwellProg = THREE.MathUtils.clamp((posT - 0.05) / 0.90, 0, 1);
 
                     const flyCards = flybyByApp[idx] || [];

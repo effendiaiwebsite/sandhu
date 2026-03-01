@@ -360,6 +360,9 @@
                 card.appendChild(label);
             }
 
+            // Set constant styles once at creation — setting them every frame causes style recalcs
+            card.style.width  = cardW + 'px';
+            card.style.zIndex = String(10 + mi);
             imgLayer.appendChild(card);
 
             // Unique slow-drift offsets so each card moves independently
@@ -452,6 +455,7 @@
             }
 
             wrap.appendChild(info);
+            wrap.style.zIndex = '30';
             imgLayer.appendChild(wrap);
 
             paradeCards.push({
@@ -482,6 +486,7 @@
                 // Pre-decode at startup so first-scroll never stalls on image decode
                 img.decode().catch(() => {});
                 el.appendChild(img);
+                el.style.zIndex = '25';
                 imgLayer.appendChild(el);
                 flybyByApp[appIdx].push({
                     el,
@@ -492,6 +497,9 @@
             });
         });
     }
+
+    // Cache once — Object.values() inside animate() would allocate a new array every frame
+    const flybyGroups = Object.values(flybyByApp);
 
     // ---- Pre-compute parade app time slices (one-time, not per-frame) ----
     // Non-uniform weights: IJT and Gator each get 30% of scroll time,
@@ -531,12 +539,13 @@
         hudDotsCont.appendChild(dot);
     });
 
+    // Cache dot elements once — querySelectorAll inside animate() would run 60×/sec
+    const hudDots = Array.from(hudDotsCont.querySelectorAll('.hud-dot'));
     let currentHudIdx = -1;
 
     function updateHUD(idx, progress) {
         hudBar.style.width = (progress * 100) + '%';
-        const dots = hudDotsCont.querySelectorAll('.hud-dot');
-        dots.forEach((d, i) => d.classList.toggle('active', i <= idx));
+        hudDots.forEach((d, i) => d.classList.toggle('active', i <= idx));
 
         if (idx === currentHudIdx) return;
         currentHudIdx = idx;
@@ -586,6 +595,16 @@
 
     // Cached viewport dimensions and track rect — updated on resize/scroll, not per-frame
     let VW = window.innerWidth, VH = window.innerHeight;
+
+    // Card sizes — computed once, updated on resize; never recomputed inside animate()
+    let PARADE_CARD_W = Math.min(580, VW * 0.52);
+    let PARADE_CARD_H = PARADE_CARD_W * 0.82;
+    let FLYBY_W       = Math.min(500, VW * 0.40);
+    let FLYBY_H       = FLYBY_W * 0.68;
+    // Apply initial widths (cards are already built above, zIndex was set at creation)
+    paradeCards.forEach(c  => { c.el.style.width = PARADE_CARD_W + 'px'; });
+    flybyGroups.forEach(grp => grp.forEach(fc => { fc.el.style.width = FLYBY_W + 'px'; }));
+
     let trackRect = trackEl ? trackEl.getBoundingClientRect() : null;
 
     function updateScrollProgress() {
@@ -611,6 +630,12 @@
     window.addEventListener('resize', () => {
         VW = window.innerWidth;
         VH = window.innerHeight;
+        PARADE_CARD_W = Math.min(580, VW * 0.52);
+        PARADE_CARD_H = PARADE_CARD_W * 0.82;
+        FLYBY_W       = Math.min(500, VW * 0.40);
+        FLYBY_H       = FLYBY_W * 0.68;
+        paradeCards.forEach(c  => { c.el.style.width = PARADE_CARD_W + 'px'; });
+        flybyGroups.forEach(grp => grp.forEach(fc => { fc.el.style.width = FLYBY_W + 'px'; }));
         camera.aspect = VW / VH;
         camera.updateProjectionMatrix();
         renderer.setSize(VW, VH);
@@ -773,9 +798,7 @@
                 const ty = (finalY - w * 0.42).toFixed(1);
 
                 card.el.style.opacity   = opacity.toFixed(3);
-                card.el.style.width     = w + 'px';
                 card.el.style.transform = `translate(${tx}px,${ty}px) perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
-                card.el.style.zIndex    = 10 + card.milestoneIdx;
             });
 
             // ---- Parade cards: horizontal scroll-driven showcase ----
@@ -800,8 +823,9 @@
 
                 // APP_WEIGHTS and appSlices are pre-computed once at init (not per-frame)
                 const PW = VW, PH = VH;
-                const CARD_W = Math.min(580, PW * 0.52);  // main card bigger than flyby cards
-                const CARD_H = CARD_W * 0.82;             // proportional height
+                // Use module-level cached sizes (recomputed only on resize, not per frame)
+                const CARD_W = PARADE_CARD_W;
+                const CARD_H = PARADE_CARD_H;
                 const nCards = paradeCards.length;
 
                 // Show parade cards only when camera has confirmed it's at the Freelance node.
@@ -861,17 +885,14 @@
                         const op = posT < 0.10 ? posT / 0.10 : posT > 0.90 ? (1 - posT) / 0.10 : 1;
 
                         card.el.style.opacity   = op.toFixed(3);
-                        card.el.style.width     = CARD_W + 'px';
                         card.el.style.transform = `translate(${x.toFixed(1)}px,${y.toFixed(1)}px) perspective(1000px) rotateY(${rotY.toFixed(1)}deg) rotateZ(${rotZ.toFixed(2)}deg) scale(${sc.toFixed(3)})`;
-                        card.el.style.zIndex    = '30';
                     });
                 } else {
                     paradeCards.forEach(c => { c.el.style.opacity = '0'; });
                 }
 
                 // ---- Flyby secondary screenshots: fly across while main card dwells ----
-                const FLYBY_W = Math.min(500, PW * 0.40);   // ~2× bigger
-                const FLYBY_H = FLYBY_W * 0.68;
+                // FLYBY_W / FLYBY_H come from module-level cache (updated only on resize)
 
                 paradeCards.forEach((card, idx) => {
                     const slice2    = appSlices[idx];
@@ -902,9 +923,7 @@
                         const tiltZ = ((x / PW) - 0.5) * -2.5;
 
                         fc.el.style.opacity   = op.toFixed(3);
-                        fc.el.style.width     = FLYBY_W + 'px';
                         fc.el.style.transform = `translate(${x.toFixed(1)}px,${y.toFixed(1)}px) rotateZ(${tiltZ.toFixed(2)}deg)`;
-                        fc.el.style.zIndex    = '25';
                     });
                 });
             }
@@ -924,7 +943,7 @@
                 card.flyT   = 0;
             });
             paradeCards.forEach(c => { c.el.style.opacity = '0'; });
-            Object.values(flybyByApp).forEach(grp => grp.forEach(fc => { fc.el.style.opacity = '0'; }));
+            flybyGroups.forEach(grp => grp.forEach(fc => { fc.el.style.opacity = '0'; }));
         }
 
         // Animate milestone nodes — slowed, smaller pulse range for elegance

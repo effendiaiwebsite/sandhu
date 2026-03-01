@@ -328,8 +328,10 @@
             const launchX = isLeft ? (1 - launchSlot.lx) : launchSlot.lx;
             const launchY = launchSlot.ly;
 
-            // Card size — big and cinematic; degree + startup chile get extra width
-            const cardW = isDegreeCard ? 520 : isStartupChileCard ? 490 : (ii === 0 ? 380 : 300);
+            // Card size — capped at desktop max, scales down proportionally on smaller screens
+            const cardMaxW = isDegreeCard ? 520 : isStartupChileCard ? 490 : (ii === 0 ? 380 : 300);
+            const cardFrac = isDegreeCard ? 0.82 : isStartupChileCard ? 0.78 : (ii === 0 ? 0.64 : 0.52);
+            const cardW = Math.min(cardMaxW, window.innerWidth * cardFrac);
 
             const card = document.createElement('div');
             card.className = 'img-card' + (isLeft ? ' accent2' : '');
@@ -374,7 +376,7 @@
                 restX, restY: isDegreeCard ? 0.42 : isStartupChileCard ? 0.40 : restSlot.ry,
                 // Off-screen launch position
                 launchX, launchY,
-                cardW,
+                cardMaxW, cardFrac, cardW,
                 // Fly-in stagger delay in seconds
                 flyDelay:    ii * 0.28,
                 // Slow breath offsets
@@ -634,6 +636,10 @@
         PARADE_CARD_H = PARADE_CARD_W * 0.82;
         FLYBY_W       = Math.min(500, VW * 0.40);
         FLYBY_H       = FLYBY_W * 0.68;
+        imgCards.forEach(c => {
+            c.cardW = Math.min(c.cardMaxW, VW * c.cardFrac);
+            c.el.style.width = c.cardW + 'px';
+        });
         paradeCards.forEach(c  => { c.el.style.width = PARADE_CARD_W + 'px'; });
         flybyGroups.forEach(grp => grp.forEach(fc => { fc.el.style.width = FLYBY_W + 'px'; }));
         camera.aspect = VW / VH;

@@ -820,58 +820,96 @@ a {
 }
 
 /* ========== RESPONSIVE ========== */
+
+/* Tablet — stop HUD text bleeding into the card area */
+@media (max-width: 900px) {
+    #hud-title { max-width: 38vw; }
+    #hud-desc  { max-width: 38vw; font-size: 0.95rem; }
+}
+
+/* Mobile landscape / large phones (≤ 768px) */
 @media (max-width: 768px) {
+    /* ---- Hero ---- */
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
-
     .hero-left {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .hero-photo    { height: 220px; }
+    .hero-degrees  { justify-content: center; }
+    .hero-tagline  { font-size: 1.05rem; }
+    .hero-cta      { font-size: 0.95rem; padding: 0.875rem 1.75rem; }
 
-    .hero-photo {
-        height: 260px;
+    /* ---- Timeline track: shorter scroll on mobile ---- */
+    #timeline-scroll-track { height: 500vh; }
+
+    /* ---- HUD: anchor to top so cards use the lower screen ---- */
+    #timeline-hud {
+        justify-content: flex-start;
+        padding: 2.5rem 5vw 0;
     }
-
-    .hero-degrees {
-        justify-content: center;
-    }
-
     #hud-year {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
+        letter-spacing: -1px;
+        margin-bottom: 0.3rem;
     }
-
     #hud-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        max-width: 54vw;
+        margin-bottom: 0.5rem;
     }
-
     #hud-desc {
-        font-size: 0.85rem;
-        max-width: 90vw;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        max-width: 54vw;
+        margin-bottom: 0.5rem;
+        max-height: 6.5rem;
+        overflow: hidden;
     }
+    #hud-link-wrap { margin-bottom: 0.5rem; }
+    .hud-link      { font-size: 0.78rem; padding: 0.35rem 0.9rem; }
+    #hud-badges    { gap: 0.35rem; }
+    .hud-badge     { font-size: 0.68rem; padding: 0.2rem 0.55rem; }
+    #hud-progress  { bottom: 1.25rem; left: 4vw; right: 4vw; }
 
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
-    }
+    /* ---- Parade card info panel ---- */
+    .parade-info    { padding: 10px 14px 12px; }
+    .parade-info h3 { font-size: 0.9rem; }
+    .parade-info p  { font-size: 0.72rem; }
 
-    .contact-btn {
-        width: 100%;
-        max-width: 280px;
-        justify-content: center;
-    }
+    /* ---- Contact ---- */
+    .contact-links { flex-direction: column; align-items: center; }
+    .contact-btn   { width: 100%; max-width: 280px; justify-content: center; }
 }
 
+/* Small phones (≤ 480px) */
 @media (max-width: 480px) {
-    .hero-name {
-        font-size: 2.2rem;
-    }
+    /* ---- Hero ---- */
+    #hero          { padding: 1.5rem; }
+    .hero-photo    { height: 180px; }
+    .hero-tagline  { font-size: 1rem; }
+    .hero-cta      { font-size: 0.875rem; padding: 0.8rem 1.5rem; }
+    .degree-tag    { font-size: 0.75rem; padding: 0.375rem 0.75rem; }
 
-    .flying-text {
-        font-size: 1.5rem;
-    }
+    /* ---- Timeline ---- */
+    #timeline-scroll-track { height: 450vh; }
+
+    /* ---- HUD ---- */
+    #timeline-hud  { padding: 1.75rem 4vw 0; }
+    #hud-year      { font-size: 2.6rem; }
+    #hud-title     { font-size: 1rem;  max-width: 56vw; }
+    #hud-desc      { font-size: 0.74rem; max-width: 56vw; max-height: 5.5rem; }
+    .hud-link      { font-size: 0.74rem; padding: 0.3rem 0.8rem; }
+    .hud-dot       { width: 6px; height: 6px; }
+    #hud-progress  { bottom: 1rem; }
+
+    /* ---- Contact ---- */
+    #contact           { padding: 5rem 1.5rem; }
+    .contact-title     { font-size: 2rem; }
+    .contact-subtitle  { font-size: 0.95rem; }
 }

@@ -827,6 +827,7 @@
 
                         if (posT <= 0 || posT >= 1) {
                             card.el.style.opacity = '0';
+                            card.el.style.pointerEvents = 'none';
                             return;
                         }
 
@@ -870,11 +871,12 @@
                         // Opacity: quick fade in/out over narrow 10% windows at each end
                         const op = posT < 0.10 ? posT / 0.10 : posT > 0.90 ? (1 - posT) / 0.10 : 1;
 
-                        card.el.style.opacity   = op.toFixed(3);
+                        card.el.style.opacity       = op.toFixed(3);
+                        card.el.style.pointerEvents = '';
                         card.el.style.transform = `translate(${x.toFixed(1)}px,${y.toFixed(1)}px) perspective(1000px) rotateY(${rotY.toFixed(1)}deg) rotateZ(${rotZ.toFixed(2)}deg) scale(${sc.toFixed(3)})`;
                     });
                 } else {
-                    paradeCards.forEach(c => { c.el.style.opacity = '0'; });
+                    paradeCards.forEach(c => { c.el.style.opacity = '0'; c.el.style.pointerEvents = 'none'; });
                 }
 
                 // ---- Flyby secondary screenshots: fly across while main card dwells ----

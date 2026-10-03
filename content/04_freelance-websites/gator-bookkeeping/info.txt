@@ -1,0 +1,6 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Gator Bookkeeping
+URL: https://gatorbookkeeping.com
+ONE-LINE SUMMARY: Bookkeeping & tax filing with a secure online client portal and admin CRM. CPA-approved, 1,547+ returns filed and $2.3M in total savings.
+TOOLS / TECH / SKILLS USED: Full-stack

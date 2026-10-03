@@ -1,0 +1,8 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Sales
+DATES:
+ONE-LINE SUMMARY:
+WHAT I BUILT / DID:
+-
+RESULTS:

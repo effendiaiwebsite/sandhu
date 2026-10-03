@@ -1,0 +1,6 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Houses in BC
+URL: https://housesinbc.com
+ONE-LINE SUMMARY: Step-by-step home buying guide for first-time buyers in BC: listings, mortgage calculator, government incentives, consultation booking and a realtor admin portal.
+TOOLS / TECH / SKILLS USED: Full-stack

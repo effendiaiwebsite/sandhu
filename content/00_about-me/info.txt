@@ -1,0 +1,22 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+NAME: Satinder Pal Singh Sandhu
+HEADLINE: Engineer · Builder · Cybersecurity
+LOCATION: Burnaby, BC
+EMAIL: satindersandhu138@gmail.com
+BIO:
+I'm a mechanical engineer turned software developer turned cybersecurity student. I like building real things: drones, smart plugs, aeroponic farms, websites and apps.
+I started a company in India, took it to Startup Chile, came to Canada and worked my way up from labourer to Construction Safety Officer, while freelancing as a developer on the side.
+Now I'm at BCIT studying Digital Forensics & Cybersecurity, and looking for my first security role.
+EDUCATION:
+- BCIT: B.Tech Forensic Investigation (Digital Forensics & Cybersecurity), expected 2027, 88.5% GPA
+- PEC University of Technology: B.Tech Mechanical Engineering, 2017, Silver Medalist for practical expertise
+SKILLS SECURITY: Vulnerability management, IAM, MFA, endpoint protection, incident response, log review, Wireshark, Nmap, Autopsy, Burp Suite, Splunk/ELK
+SKILLS SYSTEMS: Windows, Linux (Ubuntu, Kali), TCP/IP, DNS, DHCP, VPN, firewalls, Active Directory, Microsoft 365, Azure, AWS
+SKILLS PROGRAMMING: Python, Bash, PowerShell, JavaScript/TypeScript, HTML, CSS, PHP, C/C++, SQL, Git
+SKILLS FULL-STACK: React, Node.js, Express, REST APIs, MongoDB, Android (Java/Kotlin), iOS (Swift), Firebase
+SKILLS EMBEDDED: Arduino, ESP8266/ESP32, Raspberry Pi, sensors, IoT, PCB prototyping
+SKILLS TRADES: Construction safety, traffic control, site work
+CERTIFICATE CAPTIONS:
+01_btech-mechanical.png - B.Tech Mechanical Engineering, PEC
+02_comptia-a-plus.png - CompTIA A+ (2025)

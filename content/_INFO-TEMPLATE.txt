@@ -1,0 +1,31 @@
+COPY THIS FILE INTO EACH PROJECT / JOB / WEBSITE / APP FOLDER AS "info.txt" AND FILL IT IN.
+Rough notes and bullet points are fine. I'll polish the wording.
+Leave a line blank if it doesn't apply.
+---------------------------------------------------------------------
+
+TITLE:
+DATES (e.g. Mar 2018 - Dec 2018):
+WHERE (city / company / school):
+MY ROLE:
+TEAM (solo? who else was involved?):
+
+ONE-LINE SUMMARY (what is it, in one sentence):
+
+THE PROBLEM (why did this need to exist?):
+
+WHAT I BUILT / DID (3-6 bullet points):
+-
+-
+-
+
+TOOLS / TECH / SKILLS USED (comma separated):
+
+RESULTS (numbers wherever possible: users, $, yield %, flight time, grants, awards):
+
+WHAT WENT WRONG / WHAT I LEARNED (honest is good, people like this):
+
+LINKS (live site, GitHub, news article, YouTube, app store):
+
+PHOTO CAPTIONS (one line per file, using the file name):
+01.jpg -
+02.jpg -

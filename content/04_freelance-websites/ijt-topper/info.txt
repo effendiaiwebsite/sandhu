@@ -1,0 +1,6 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: IJT Topper
+URL: https://ijttopper.com
+ONE-LINE SUMMARY: Exam prep platform for Indian students targeting government jobs: 50+ exams, mock tests and progress tracking.
+TOOLS / TECH / SKILLS USED: Android, iOS, Web

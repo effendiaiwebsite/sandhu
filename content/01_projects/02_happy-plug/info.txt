@@ -1,0 +1,16 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Happy Plug
+DATES:
+MY ROLE: Founder, hardware & software developer
+ONE-LINE SUMMARY: A WiFi smart plug with remote control, scheduling and secure credential provisioning.
+THE PROBLEM:
+WHAT I BUILT / DID:
+- Designed the ESP8266-based plug hardware
+- Wrote the C/C++ firmware with MQTT messaging
+- Built secure WiFi credential provisioning on the device
+- Built the app / web control for remote switching and schedules
+TOOLS / TECH / SKILLS USED: ESP8266, C/C++, MQTT, PCB design, Android
+RESULTS:
+WHAT WENT WRONG / WHAT I LEARNED:
+LINKS:

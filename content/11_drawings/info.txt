@@ -1,0 +1,7 @@
+# Drawings: drop images here. Captions below are optional (descriptive filenames become captions automatically).
+TITLE: My Drawings
+ONE-LINE SUMMARY: Pencil sketches and portraits I've drawn.
+PHOTO CAPTIONS:
+GirlPotrait.jpg - Girl portrait
+GirlPotrait2.jpg - Girl portrait II
+SelfPotrait.jpg - Self portrait

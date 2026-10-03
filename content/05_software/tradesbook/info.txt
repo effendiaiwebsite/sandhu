@@ -1,0 +1,18 @@
+# DRAFT written by Claude from your screenshots. Edit anything; lines starting with # are ignored.
+
+TITLE: TradesBook
+DATES: 2021
+MY ROLE: Android developer
+ONE-LINE SUMMARY: An Android app for construction crews to check in, see their tasks, fill out the daily COVID questionnaire and track attendance.
+THE PROBLEM:
+WHAT I BUILT / DID:
+- Email/password login and registration with Firebase Authentication and email verification
+- Lockout after too many failed login attempts
+- Worker dashboard with Check In, Tasks, COVID Questionnaire and Attendance
+TOOLS / TECH / SKILLS USED: Android, Java, XML, Firebase Authentication, Android Studio
+URL:
+GITHUB:
+PHOTO CAPTIONS:
+tradesbookLogin.png - Login screen
+tradesbookLogin1.png - Login screen
+tradesbookDashboard.png - Worker dashboard, built in Android Studio

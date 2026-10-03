@@ -1,0 +1,16 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Frieden Electric (Startup Chile)
+DATES: 2017 - 2019
+WHERE: Santiago, Chile
+MY ROLE: Founder
+ONE-LINE SUMMARY: Founded Frieden Electric to help farmers get higher yields with automated aeroponics.
+WHAT I BUILT / DID:
+- Built newer, improved aeroponic systems in Santiago
+- Won a $15,000 grant from the Chilean government (Startup Chile)
+- Received a one-year residency visa and co-working space in Santiago
+RESULTS: $15,000 grant · Startup Chile · PEC incubated · Rs 10 lakh award
+LINKS:
+The Tribune: PEC start-up wins Rs10 lakh | https://www.tribuneindia.com/news/chandigarh/pec-start-up-wins-rs10-lakh/
+PHOTO CAPTIONS:
+cover.jpg - Frieden Electric at Startup Chile

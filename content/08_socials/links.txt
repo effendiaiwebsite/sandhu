@@ -1,0 +1,7 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+# One line per platform:   Name | URL | MSN-style status message
+# Status can start with (Online), (Busy), (Away) or (Offline)
+Email | mailto:satindersandhu138@gmail.com | (Online) Best way to reach me
+# LinkedIn | https://www.linkedin.com/in/your-handle | (Busy) networking 🤝
+# GitHub | https://github.com/your-handle | (Online) pushing commits

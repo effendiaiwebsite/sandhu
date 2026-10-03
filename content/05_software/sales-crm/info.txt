@@ -1,0 +1,16 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Sales CRM
+URL: https://a2z-i77d.onrender.com
+GITHUB:
+DEMO LOGIN:
+ONE-LINE SUMMARY: Full sales CRM with separate admin and salesperson portals.
+WHAT I BUILT / DID:
+- Lead management and daily call/meeting tracking
+- Quote generator
+- Real-time team performance dashboard for admins
+TOOLS / TECH / SKILLS USED: Full-stack
+PHOTO CAPTIONS:
+cover.png - Salesperson dashboard
+02.png - Admin dashboard
+03.png - Quote generator

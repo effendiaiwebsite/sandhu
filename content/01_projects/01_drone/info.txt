@@ -1,0 +1,13 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Drone
+DATES:
+MY ROLE: Designer & builder
+ONE-LINE SUMMARY: A drone I designed and built from scratch.
+THE PROBLEM:
+WHAT I BUILT / DID:
+-
+TOOLS / TECH / SKILLS USED:
+RESULTS:
+WHAT WENT WRONG / WHAT I LEARNED:
+LINKS:

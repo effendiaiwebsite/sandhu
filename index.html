@@ -1,133 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satinder Pal Singh Sandhu | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Satinder Sandhu XP</title>
+  <meta name="description" content="Satinder Pal Singh Sandhu: mechanical engineer, builder, developer and cybersecurity student. Explore projects, work, software, writing and music on a Windows XP-style desktop.">
+  <meta name="theme-color" content="#245edb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%233c9e2c'/%3E%3Ctext x='24' y='33' font-size='26' font-weight='bold' font-style='italic' fill='%23fff' text-anchor='middle' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/XP.css">
+  <link rel="stylesheet" href="xp/xp.css">
 </head>
-<body> 
-
-    <!-- Three.js Canvas - particle starfield -->
-    <canvas id="starfield"></canvas>
-
-    <!-- ========== HERO SECTION ========== -->
-    <section id="hero">
-        <div class="hero-content">
-            <div class="hero-left">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Satinder Pal<br>Singh Sandhu</h1>
-                <div class="hero-degrees">
-                    <span class="degree-tag">B.Tech Mechanical Engineering</span>
-                    <span class="degree-tag">B.Tech Digital Forensics &amp; Cybersecurity</span>
-                </div>
-                <p class="hero-tagline">Builder. Engineer. Problem Solver.</p>
-                <a href="#timeline" class="hero-cta">View My Journey <span class="arrow-down">&darr;</span></a>
-            </div>
-            <div class="hero-right">
-                <div class="hero-image-wrapper">
-                    <img src="images/Satinder San (1).png" alt="Satinder Pal Singh Sandhu" class="hero-photo">
-                    <div class="hero-image-glow"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-dot"></div>
-            </div>
-            <span>Scroll to explore</span>
-        </div>
-    </section>
-
-    <!-- ========== TIMELINE SECTION ========== -->
-    <!-- Scroll spacer: gives scroll distance for the 3D camera to travel -->
-    <div id="timeline-scroll-track">
-        <!-- 3D scene rendered into #starfield canvas via JS -->
-        <!-- HUD overlay: year label + milestone text shown at each stop -->
-        <div id="timeline-hud">
-            <div id="hud-year"></div>
-            <div id="hud-title"></div>
-            <div id="hud-desc"></div>
-            <div id="hud-link-wrap"></div>
-            <div id="hud-badges"></div>
-            <div id="hud-progress">
-                <div id="hud-progress-bar"></div>
-                <div id="hud-progress-dots"></div>
-            </div>
-        </div>
-        <!-- Floating HTML image cards that are positioned in 3D-ish space via JS -->
-        <div id="timeline-img-layer"></div>
+<body>
+  <noscript>
+    <div style="color:#fff;padding:20px;font:16px Tahoma,sans-serif;position:relative;z-index:99">
+      This site needs JavaScript. <a style="color:#9cf" href="classic/">Open the classic version</a>.
     </div>
+  </noscript>
 
-    <!-- Hidden data source for the JS to read -->
-    <div id="timeline-data" style="display:none">
-        <div data-year="2016" data-title="Graduated B.Tech&#10;Mechanical Engineering"
-             data-desc="" data-link="https://pec.ac.in" data-link-label="Punjab Engineering College, Chandigarh ↗"
-             data-images="images/bTechDegree.png"
-             data-image-alts="B.Tech Degree"
-             data-badges=""></div>
-        <div data-year="2017" data-title="Frieden Electric — Startup Chile"
-             data-desc="Founded Frieden Electric to help farmers ensure high yield. Received a $15,000 grant from the Chile Government, a one-year residency visa, and co-working space in Santiago."
-             data-link="https://www.tribuneindia.com/news/chandigarh/pec-start-up-wins-rs10-lakh/" data-link-label="PEC start-up wins Rs10 lakh — The Tribune ↗"
-             data-images="images/startupchile.jpg"
-             data-image-alts="Frieden Electric at Startup Chile"
-             data-badges="$15,000 Grant|Chile Residency|PEC Incubated"></div>
-        <div data-year="2019" data-title="Came to Canada"
-             data-desc="Started from the ground up with hard work and determination."
-             data-link="" data-link-label=""
-             data-images="images/labour1.jpg|images/labor2.jpg|images/labor3.jpg"
-             data-image-alts="Labour work|Labour work|Labour work"
-             data-badges=""></div>
-        <div data-year="2021"
-             data-title="Freelance Software Developer"
-             data-desc="Building real-world web &amp; software products for Canadian businesses and beyond."
-             data-link="" data-link-label=""
-             data-parade="true"
-             data-images="images/screenshots/IJT/mainScreen.png|images/screenshots/GatorBookkeeping/websiteHome.png|images/screenshots/HousesinBC/mainScreen.png|images/screenshots/SalesCRM/salespersonDashboard.png"
-             data-image-alts="IJT — Institute for Job Training|Gator Bookkeeping|Houses in BC|Sales CRM"
-             data-image-links="https://ijttopper.com|https://gatorbookkeeping.com|https://housesinbc.com|https://a2z-i77d.onrender.com"
-             data-app-descs="Exam prep platform for Indian students targeting government jobs — choose 8th, 10th or 12th pass level, browse 50+ exams, and practice with mock tests and progress tracking.|Professional bookkeeping &amp; tax filing with a secure online client portal and admin CRM. CPA-approved — 1,547+ returns filed and $2.3M in total savings.|Step-by-step home buying guide for first-time buyers in BC. Browse listings, calculate mortgages, explore government incentives, and book consultations through a full realtor admin portal.|Full sales CRM with separate admin and salesperson portals — manage leads, track daily calls and meetings, generate quotes, and monitor team performance in real time."
-             data-secondary-images="images/screenshots/IJT/availableExams.png|images/screenshots/IJT/examInfo.png|images/screenshots/IJT/numberSystem.png||images/screenshots/GatorBookkeeping/admindashboard.png|images/screenshots/GatorBookkeeping/clientDashboard.png||images/screenshots/HousesinBC/admindashboardScreen.png|images/screenshots/HousesinBC/mortgageCalculator.png|images/screenshots/HousesinBC/homeBuyerdashboardScreen.png||images/screenshots/SalesCRM/adminDashboard.png|images/screenshots/SalesCRM/quoteGenerator.png"
-             data-badges="Android/iOS/Web|Full-Stack|Result Oriented Apps"></div>
-        <div data-year="2025" data-title="Pivoting into Cybersecurity"
-             data-desc="Enrolled at BCIT — B.Tech Digital Forensics &amp; Cybersecurity (Forensic Investigation). Started building the foundation: earned CompTIA A+ and currently studying for Network+. Actively seeking cybersecurity roles to gain hands-on experience."
-             data-link="" data-link-label=""
-             data-images="images/compTIAA.png"
-             data-image-alts="CompTIA A+ Certification"
-             data-image-links=""
-             data-badges="CompTIA A+|Network+ In Progress|BCIT|Open to Work"></div>
+  <!-- Boot screen -->
+  <div id="boot" role="button" aria-label="Skip boot screen">
+    <div class="brand"><small>Satinder</small><b><span data-icon="orb"></span>Sandhu<sup>xp</sup></b></div>
+    <div class="boot-bar"><span></span><span></span><span></span></div>
+    <div class="boot-hint">Click to skip</div>
+  </div>
+
+  <!-- Login screen -->
+  <div id="login" hidden>
+    <div class="login-top"></div>
+    <div class="login-mid">
+      <div class="login-left">
+        <div class="brand"><small>Satinder</small><b><span data-icon="orb"></span>Sandhu<sup>xp</sup></b></div>
+        <p>To begin, click your user name</p>
+      </div>
+      <div class="login-right">
+        <button class="user-tile" id="user-tile">
+          <span class="avatar"><img id="login-avatar" alt=""></span>
+          <span><strong id="login-name">Satinder Sandhu</strong><small id="login-headline"></small><em>Click to enter →</em></span>
+        </button>
+      </div>
     </div>
-
-    <!-- ========== CONTACT / HIRE ME ========== -->
-    <section id="contact">
-        <div class="contact-container">
-            <h2 class="contact-title">Let's Work Together</h2>
-            <p class="contact-subtitle">I build things that matter. If you're looking for someone who ships — let's talk.</p>
-            <div class="contact-links">
-                <a href="mailto:satindersandhu138@gmail.com" class="contact-btn primary">
-                    <span class="btn-icon">&#9993;</span> Email Me
-                </a>
-               
-                <a href="images/SatinderSandhuCV.pdf" target="_blank" class="contact-btn">
-                    <span class="btn-icon">&#128196;</span> Resume
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox overlay -->
-    <div id="lightbox" class="lightbox">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <img class="lightbox-img" src="" alt="">
+    <div class="login-bottom">
+      <button class="login-btn" id="classic-btn"><span data-icon="classic"></span><span>Classic Mode</span></button>
+      <div class="login-note">After you log on, double-click any icon to explore my projects, work and music.</div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="app.js"></script>
+  <!-- Desktop -->
+  <div id="desktop" hidden>
+    <div id="wallpaper"></div>
+    <div id="tao" title="Open today's chapter" role="button" tabindex="0"></div>
+    <div id="icons" role="list" aria-label="Desktop"></div>
+    <div id="windows"></div>
+    <div id="start-menu" hidden></div>
+    <div id="taskbar">
+      <button id="start-btn" aria-haspopup="menu"><span data-icon="orb"></span>start</button>
+      <div id="tasks"></div>
+      <div id="tray">
+        <button id="tray-net" title="Socials"><span data-icon="network"></span></button>
+        <button id="tray-sound" title="Sound is off. Click to turn on."></button>
+        <span id="clock"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text version of the whole site, for search engines and screen readers. Generated by tools/build-content.js -->
+  <div class="visually-hidden" aria-label="Text version of this site">
+    <h1>Satinder Pal Singh Sandhu</h1>
+<!--SEO-START-->
+<div id="seo-content"><section><h2>About Me</h2><p>Engineer · Builder · Cybersecurity</p><p>I'm a mechanical engineer turned software developer turned cybersecurity student. I like building real things: drones, smart plugs, aeroponic farms, websites and apps.
+I started a company in India, took it to Startup Chile, came to Canada and worked my way up from labourer to Construction Safety Officer, while freelancing as a developer on the side.
+Now I'm at BCIT studying Digital Forensics &amp; Cybersecurity, and looking for my first security role.</p><section><h3>Certificates</h3></section></section>
+<section><h2>Projects</h2><section><h3>Drone</h3><p>A drone I designed and built from scratch.</p><p>-</p></section><section><h3>Happy Plug</h3><p>A WiFi smart plug with remote control, scheduling and secure credential provisioning.</p><p>- Designed the ESP8266-based plug hardware
+- Wrote the C/C++ firmware with MQTT messaging
+- Built secure WiFi credential provisioning on the device
+- Built the app / web control for remote switching and schedules</p><section><h4>Idea and Sketches</h4></section><section><h4>First Prototype</h4></section><section><h4>Hardware and Circuits</h4></section><section><h4>App and Software</h4></section><section><h4>Testing</h4></section><section><h4>Final Product</h4></section></section><section><h3>Aeroponics (India)</h3><p>Automated aeroponic growing systems controlled by microcontrollers and environmental sensors.</p><p>- Designed automated aeroponic systems with sensors and real-time control logic
+- Wrote C/C++ firmware for closed-loop control of nutrient cycles and climate</p></section><section><h3>Frieden Electric (Startup Chile)</h3><p>Founded Frieden Electric to help farmers get higher yields with automated aeroponics.</p><p>- Built newer, improved aeroponic systems in Santiago
+- Won a $15,000 grant from the Chilean government (Startup Chile)
+- Received a one-year residency visa and co-working space in Santiago</p><p>$15,000 grant · Startup Chile · PEC incubated · Rs 10 lakh award</p></section><section><h3>Stirling Engine</h3><p>A low-cost Stirling cycle engine that turns the heat of a cooking fire into electricity for remote rural homes.</p><p>- Designed and built a low-cost Stirling cycle engine to produce power in remote areas
+- Built a thermodynamic model of the Stirling engine, including convection heat transfer to the working fluid
+- Presented both papers at the International Congress on Energy and Environment Engineering and Management, Paris (22-24 July 2015)</p><p>Oral presentation · Poster presentation · Paris 2015</p></section></section>
+<section><h2>Cybersecurity</h2></section>
+<section><h2>Work Experience</h2><section><h3>Construction</h3><section><h4>Labourer</h4><p>Came to Canada and started from the ground up.</p><p>-</p></section><section><h4>Traffic Control Person</h4><p>-</p></section><section><h4>Construction Safety Officer</h4><p>-</p></section></section><section><h3>Sales</h3><p>-</p><section><h4>Opinions</h4></section><section><h4>Sample Pitches</h4></section></section></section>
+<section><h2>Freelance Websites</h2><section><h3>Gator Bookkeeping</h3><p>Bookkeeping &amp; tax filing with a secure online client portal and admin CRM. CPA-approved, 1,547+ returns filed and $2.3M in total savings.</p><p><a href="https://gatorbookkeeping.com">https://gatorbookkeeping.com</a></p></section><section><h3>Houses in BC</h3><p>Step-by-step home buying guide for first-time buyers in BC: listings, mortgage calculator, government incentives, consultation booking and a realtor admin portal.</p><p><a href="https://housesinbc.com">https://housesinbc.com</a></p></section><section><h3>IJT Topper</h3><p>Exam prep platform for Indian students targeting government jobs: 50+ exams, mock tests and progress tracking.</p><p><a href="https://ijttopper.com">https://ijttopper.com</a></p></section></section>
+<section><h2>Software</h2><section><h3>Sales CRM</h3><p>Full sales CRM with separate admin and salesperson portals.</p><p>- Lead management and daily call/meeting tracking
+- Quote generator
+- Real-time team performance dashboard for admins</p><p><a href="https://a2z-i77d.onrender.com">https://a2z-i77d.onrender.com</a></p></section><section><h3>TradesBook</h3><p>An Android app for construction crews to check in, see their tasks, fill out the daily COVID questionnaire and track attendance.</p><p>- Email/password login and registration with Firebase Authentication and email verification
+- Lockout after too many failed login attempts
+- Worker dashboard with Check In, Tasks, COVID Questionnaire and Attendance</p></section></section>
+<section><h2>Writing</h2><section><h3>Facebook</h3></section><section><h3>LinkedIn</h3></section><section><h3>Other</h3></section><section><h3>School</h3></section></section>
+<section><h2>Music</h2></section>
+<section><h2>Socials</h2><p><a href="mailto:satindersandhu138@gmail.com">Email</a></p></section>
+<section><h2>Ideas and Collabs</h2></section>
+<section><h2>Recycle Bin Bloopers</h2></section>
+<section><h2>My Drawings</h2><p>Pencil sketches and portraits I've drawn.</p></section></div>
+<!--SEO-END-->
+  </div>
+
+  <script src="xp/icons.js"></script>
+  <script src="xp/data/tao.js"></script>
+  <script src="xp/data/content.js"></script>
+  <script src="xp/os.js"></script>
+  <script src="xp/apps.js"></script>
 </body>
 </html>

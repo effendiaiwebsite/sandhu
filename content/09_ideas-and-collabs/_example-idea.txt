@@ -1,0 +1,8 @@
+# Copy this file for each idea, e.g. "01_solar-cold-storage.txt", remove the # marks and fill in.
+# Files whose name starts with _ are hidden on the site.
+#
+# TITLE: Example idea
+# DATE: 2026
+# THE PROBLEM: What problem does this solve?
+# THE IDEA: A few lines about the idea.
+# LOOKING FOR: Co-founder / developer / funding / testers

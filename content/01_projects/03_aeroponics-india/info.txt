@@ -1,0 +1,13 @@
+# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
+
+TITLE: Aeroponics (India)
+DATES:
+WHERE: Chandigarh, India
+MY ROLE: Mechatronics / automation developer
+ONE-LINE SUMMARY: Automated aeroponic growing systems controlled by microcontrollers and environmental sensors.
+WHAT I BUILT / DID:
+- Designed automated aeroponic systems with sensors and real-time control logic
+- Wrote C/C++ firmware for closed-loop control of nutrient cycles and climate
+TOOLS / TECH / SKILLS USED: Arduino, C/C++, sensors, pumps, misting nozzles
+RESULTS:
+LINKS:

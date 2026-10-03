@@ -1,0 +1,11 @@
+# Render Blueprint: static site. Connect the GitHub repo in Render → New → Blueprint.
+services:
+  - type: web
+    name: sandhu-xp
+    runtime: static
+    buildCommand: node tools/build-content.js
+    staticPublishPath: .
+    headers:
+      - path: /content/*
+        name: Cache-Control
+        value: public, max-age=604800

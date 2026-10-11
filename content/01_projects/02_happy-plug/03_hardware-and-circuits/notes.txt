@@ -1,2 +1,1 @@
-# Write 2-4 lines about this stage: what happened, what problem you solved.
-# (Lines starting with # are hidden on the site.)
+Lots of iterations. The thin and thick prototypes were about squeezing the electronics into something that could sit on a wall. The square and triangle designs were about making it look like something you'd actually buy. Each one taught me something about what fit, what overheated and what looked right.

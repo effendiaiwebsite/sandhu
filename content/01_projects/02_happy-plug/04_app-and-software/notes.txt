@@ -1,2 +1,1 @@
-# Write 2-4 lines about this stage: what happened, what problem you solved.
-# (Lines starting with # are hidden on the site.)
+An Android app connected to the plug over WiFi to switch it on and off. Screenshots coming soon.

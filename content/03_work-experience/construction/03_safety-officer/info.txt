@@ -1,7 +1,14 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Construction Safety Officer
-DATES:
-ONE-LINE SUMMARY:
+DATES: 2023 - present
+WHERE: Lower Mainland, BC
+ONE-LINE SUMMARY: Keeping workers safe on construction sites: inspections, orientations, hazard control and incident investigations.
 WHAT I BUILT / DID:
--
+- Daily site inspections, spotting hazards and working with the trades to fix them on the spot
+- Running orientations so new workers know the site's rules and the dangers they might not see
+- Coordinating between trades to keep the site compliant with BC's Occupational Health and Safety Regulation
+- Investigating incidents, writing the reports and making sure corrective actions actually happen
+- Keeping the paperwork methodical and up to date, on Procore and on paper
+TOOLS / TECH / SKILLS USED: BCIT Construction Safety Officer certificate, OFA 3, OHSR, Procore, incident investigation, toolbox talks
+WHAT WENT WRONG / WHAT I LEARNED: I enjoy this work. It's methodical, it matters, and most of the job is noticing the hazard before it becomes an incident and telling someone about a danger they didn't know was there. It's also what pointed me toward cybersecurity: the same mindset, applied to systems instead of sites.
+PHOTO CAPTIONS:
+ConstructionPosing.jpg - On site

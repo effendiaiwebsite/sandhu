@@ -1,0 +1,8 @@
+TITLE: RTS Reliable Tax Services
+URL: https://rtsreliabletaxes.com/
+DATES: 2022
+ONE-LINE SUMMARY: Website for a tax preparation service: services, pricing, downloadable tax forms and online appointment booking.
+WHAT I BUILT / DID:
+- Designed and built the full site with a services catalogue, pricing page and forms library
+- Online appointment booking so clients can schedule their tax consultation directly
+TOOLS / TECH / SKILLS USED: HTML, CSS, JavaScript, hosting, SSL, DNS

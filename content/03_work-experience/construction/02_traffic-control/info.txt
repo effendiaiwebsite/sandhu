@@ -1,7 +1,9 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Traffic Control Person
-DATES:
-ONE-LINE SUMMARY:
+DATES: 2020 - 2021
+WHERE: Lower Mainland, BC
+ONE-LINE SUMMARY: A year keeping traffic, pedestrians and crews safe around construction zones at more than ten sites.
 WHAT I BUILT / DID:
--
+- Regulated traffic around active construction sites
+- Kept pedestrians and workers safe in high-risk construction zones
+- Worked at over ten sites across the Lower Mainland
+WHAT WENT WRONG / WHAT I LEARNED: Easier on the body than labouring, but the long stretches of standing still and staying alert turned out to be almost meditative. It taught me patience, and how to stay sharp when nothing is happening, which is exactly when things go wrong.

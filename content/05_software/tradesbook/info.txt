@@ -1,17 +1,15 @@
-# DRAFT written by Claude from your screenshots. Edit anything; lines starting with # are ignored.
-
 TITLE: TradesBook
 DATES: 2021
 MY ROLE: Android developer
-ONE-LINE SUMMARY: An Android app for construction crews to check in, see their tasks, fill out the daily COVID questionnaire and track attendance.
-THE PROBLEM:
+ONE-LINE SUMMARY: A workforce-management app for construction companies, built right after I arrived in Canada to sell to the companies I was working for.
+THE PROBLEM: On the sites I was working, check-ins, task lists, COVID questionnaires and attendance were all paper or word of mouth. I thought a simple app could replace all of it.
 WHAT I BUILT / DID:
 - Email/password login and registration with Firebase Authentication and email verification
 - Lockout after too many failed login attempts
 - Worker dashboard with Check In, Tasks, COVID Questionnaire and Attendance
+- Showed the prototype to the construction companies I was working with
 TOOLS / TECH / SKILLS USED: Android, Java, XML, Firebase Authentication, Android Studio
-URL:
-GITHUB:
+WHAT WENT WRONG / WHAT I LEARNED: The companies weren't excited. When I tried selling websites instead, I found a far more receptive market, so I followed it. TradesBook is the reason I became a freelance web developer.
 PHOTO CAPTIONS:
 tradesbookLogin.png - Login screen
 tradesbookLogin1.png - Login screen

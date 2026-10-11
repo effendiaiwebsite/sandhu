@@ -1,7 +1,9 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Labourer
-DATES: 2019 -
-ONE-LINE SUMMARY: Came to Canada and started from the ground up.
+DATES: 2019 - 2020
+WHERE: Workforce Staffing Solutions, Lower Mainland, BC
+ONE-LINE SUMMARY: My first year in Canada. Started from the bottom, got paid every evening, and learned how a construction site actually works.
 WHAT I BUILT / DID:
--
+- General labour on construction sites across the Lower Mainland, a different site most days
+- The agency paid wages every evening, so every day was a fresh start and a fresh test
+- Worked hard, learned fast, and earned the trust that led to the next step up
+WHAT WENT WRONG / WHAT I LEARNED: Arriving with an engineering degree and a startup behind me and starting as a labourer was humbling. It was also the best education in how things really get built, and in respecting the people who build them.

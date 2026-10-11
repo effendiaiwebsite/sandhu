@@ -1,13 +1,26 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Drone
-DATES:
-MY ROLE: Designer & builder
-ONE-LINE SUMMARY: A drone I designed and built from scratch.
-THE PROBLEM:
+DATES: 2013
+WHERE: PEC University of Technology, Chandigarh
+MY ROLE: Designer & builder (personal project)
+ONE-LINE SUMMARY: A series of home-built aircraft I designed during my Mechanical Engineering degree. None of them flew, and I learned more from them than from anything that did.
+THE PROBLEM: I wanted to understand flight by building it myself, not just reading about it.
 WHAT I BUILT / DID:
--
-TOOLS / TECH / SKILLS USED:
-RESULTS:
-WHAT WENT WRONG / WHAT I LEARNED:
-LINKS:
+- Built multiple versions over the course of my B.Tech, each one fixing what the last got wrong
+- Cut the foam aerofoil wings with a foam cutter I built at home
+- Spent a long time machining a twin swashplate mechanism out of aluminum
+- Learned about balsa wood, electric motors, ESCs, and the difference between centre of weight and centre of pressure
+TOOLS / TECH / SKILLS USED: Foam board, balsa wood, brushless motors, ESCs, aluminum machining, home-built foam cutter
+RESULTS: This version didn't fly. The modified versions after it didn't fly either.
+WHAT WENT WRONG / WHAT I LEARNED: Getting the centre of weight and centre of pressure right is everything. The hardest lesson was that building is only half of engineering; the other half is testing and accepting what the test tells you. The Happy Plug, my next project, went much better because of this one.
+PHOTO CAPTIONS:
+ConstructionChassis.jpg - The chassis taking shape
+ConstructionJoining1.jpg - Joining the wing to the body
+ConstructionJoining2.jpg - Joining the wing to the body
+AeroplaneOnBed.jpg - Assembled and waiting for electronics
+AoBopen.jpg - Open top, wiring in progress
+AoBcloseupOpenTop.jpg - Close-up of the open top
+TopViewAoB.jpg - Top view
+PlaneOnTable.jpg - On the workbench
+MotorOnBase.jpg - Motor mounted on the base
+DroneOnFloor.jpg - Ready for a test
+MirrorSelfieWithDrone.jpg - Me and the plane

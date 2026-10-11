@@ -1,5 +1,4 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
-# Drop your .mp3 files in this folder. Name them in play order: 01_song-name.mp3
-# Optional: add a cover.jpg for the player.
+TITLE: My Music
+ONE-LINE SUMMARY: Songs I've written and performed. More coming from Instagram and Facebook.
 TRACK CAPTIONS:
+PunjabiSongOnLabor.mp4 - Punjabi song on labour

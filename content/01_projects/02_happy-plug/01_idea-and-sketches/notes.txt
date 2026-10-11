@@ -1,2 +1,1 @@
-# Write 2-4 lines about this stage: what happened, what problem you solved.
-# (Lines starting with # are hidden on the site.)
+I'd just come back from presenting the Stirling engine at a conference in Paris and wanted to build something people could actually use. The first idea was simple: switch the room's lights and fan on and off with an IR remote. The "Whistle Light" video is that first experiment.

@@ -1,13 +1,27 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Aeroponics (India)
-DATES:
+DATES: 2017
 WHERE: Chandigarh, India
-MY ROLE: Mechatronics / automation developer
-ONE-LINE SUMMARY: Automated aeroponic growing systems controlled by microcontrollers and environmental sensors.
+MY ROLE: Co-founder, designer & builder (Frieden Electric)
+ONE-LINE SUMMARY: Automated aeroponic growing systems I designed and built in India, then sold door to door. My first ever sales orders.
+THE PROBLEM: I believed India had the highest number of food-insecure people in the world, and I wanted to grow food anywhere, including remote and rural areas, without soil.
 WHAT I BUILT / DID:
-- Designed automated aeroponic systems with sensors and real-time control logic
-- Wrote C/C++ firmware for closed-loop control of nutrient cycles and climate
-TOOLS / TECH / SKILLS USED: Arduino, C/C++, sensors, pumps, misting nozzles
-RESULTS:
-LINKS:
+- Designed the systems in CAD, then built the frames, misting and pump systems by hand
+- Wrote the microcontroller firmware that controlled the nutrient cycles and sensors
+- Built and tested two complete systems
+- Took them door to door and got real orders, my first sales ever
+TOOLS / TECH / SKILLS USED: Arduino, C/C++, sensors, pumps, misting nozzles, CAD, fabrication, door-to-door sales
+RESULTS: Two working systems · First sales orders · Led to Startup Chile funding
+WHAT WENT WRONG / WHAT I LEARNED: Before I could fulfil the orders, we got funding and an invitation to Chile. See the Frieden Electric (Startup Chile) project for how the story continues.
+PHOTO CAPTIONS:
+CAD1.png - CAD design of the system
+Frame1.jpg - Building the frame
+Frame2.jpg - Building the frame
+FrameWithoutPump.jpg - Frame before the pump went in
+Construction.jpg - Construction in progress
+ContructionTest.jpg - First test
+FullyFinishedPrototype1.jpg - First fully finished prototype
+TwoBuiltSystems.jpg - Both systems built
+SystemWithLabels.png - How the system works
+LargeSystematOffice.png - The large system at the office
+MicrogreensIndia.jpg - Microgreens growing
+BrochureNew.jpg - The sales brochure

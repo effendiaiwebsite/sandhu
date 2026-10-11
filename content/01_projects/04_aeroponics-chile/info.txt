@@ -1,16 +1,29 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Frieden Electric (Startup Chile)
-DATES: 2017 - 2019
+DATES: 2017 - 2018
 WHERE: Santiago, Chile
-MY ROLE: Founder
-ONE-LINE SUMMARY: Founded Frieden Electric to help farmers get higher yields with automated aeroponics.
+MY ROLE: Co-founder
+ONE-LINE SUMMARY: Took the aeroponics company to Santiago on a Startup Chile grant, built two more systems, grew microgreens and gave free samples to local shops.
+THE PROBLEM: Grow food anywhere, without soil, for the people who need it most.
 WHAT I BUILT / DID:
-- Built newer, improved aeroponic systems in Santiago
-- Won a $15,000 grant from the Chilean government (Startup Chile)
-- Received a one-year residency visa and co-working space in Santiago
+- Won a $15,000 grant from the Chilean government through Startup Chile, plus a one-year residency visa and co-working space in Santiago
+- Built two more aeroponic systems in Chile
+- Grew microgreens and gave free samples to local shops to find customers
+- Spoke to college students about the company
 RESULTS: $15,000 grant · Startup Chile · PEC incubated · Rs 10 lakh award
+WHAT WENT WRONG / WHAT I LEARNED:
+We didn't speak the language and knew too little about sales to turn free samples into real customers, so we came back.
+The bigger lesson came later. I'd started this to fix food insecurity in India, thinking the problem was getting food to remote places. Over time I realised the food is usually available; a large part of the population just can't afford it. India's food insecurity is more economic than logistical. If someone can't afford a kilo of wheat or rice, they certainly can't buy and run an aeroponic system. That's why it ended.
 LINKS:
 The Tribune: PEC start-up wins Rs10 lakh | https://www.tribuneindia.com/news/chandigarh/pec-start-up-wins-rs10-lakh/
 PHOTO CAPTIONS:
-cover.jpg - Frieden Electric at Startup Chile
+cover.jpg - The Startup Chile cohort
+CAD2.png - CAD design of the Chile system
+SystemLightsTest1.jpg - Testing the grow lights
+GrowingMicrogreens1.jpg - Microgreens growing
+MicrogreendsCloseup1.jpg - Microgreens close-up
+MicrogreensCloseup2.jpg - Microgreens close-up
+DogOnSystem1.jpg - One of our foster dogs, supervising
+DogOnSystem2.jpg - The other foster dog. Lovely company for a few months.
+InjuryFoot.jpg - Building the systems. It happens.
+InjuryCloseUp.jpg - Close-up of the same
+IfPoemForgetting.mp4 - Speaking to college students in Chile. I recited Kipling's "If" from memory and forgot the last verse.

@@ -32,6 +32,8 @@
   const coverOf = (n) => (n.images[0] || {}).src;
   const isWebsite = (n) => n.info.url && slug(parents.get(n) || n) === 'freelance-websites';
   const isStage = (c) => /^\d/.test(c.name) && !c.docs.length;
+  // Fields the project overview already renders in a fixed place; anything else gets its own heading
+  const KNOWN_FIELDS = ['title', 'dates', 'where', 'my role', 'team', 'one-line summary', 'the problem', 'what i built / did', 'tools / tech / skills used', 'results', 'what went wrong / what i learned', 'links', 'url', 'github', 'demo login'];
   // Every folder inside these sections is a project, even before it has an info.txt
   const COLLECTIONS = ['projects', 'software', 'cybersecurity', 'construction'];
   const isProject = (c) => hasInfo(c) || COLLECTIONS.includes(slug(parents.get(c) || c));
@@ -197,6 +199,7 @@
           ${i['tools / tech / skills used'] ? '<h3>Tools &amp; skills</h3>' + tagList(i['tools / tech / skills used']) : ''}
           ${results}
           ${field('What went wrong &amp; what I learned', 'what went wrong / what i learned')}
+          ${Object.keys(i).filter((k) => !KNOWN_FIELDS.includes(k) && !k.endsWith('captions')).map((k) => field(esc(k.replace(/\b\w/g, (c) => c.toUpperCase())), k)).join('')}
           ${otherLinks.length ? '<h3>Links</h3><ul>' + otherLinks.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a></li>`).join('') + '</ul>' : ''}
         </div>
       </div>`;

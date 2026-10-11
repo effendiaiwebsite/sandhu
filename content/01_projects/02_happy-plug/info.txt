@@ -1,16 +1,16 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Happy Plug
-DATES:
+DATES: 2016 - 2017
+WHERE: Chandigarh, India
 MY ROLE: Founder, hardware & software developer
-ONE-LINE SUMMARY: A WiFi smart plug with remote control, scheduling and secure credential provisioning.
-THE PROBLEM:
+TEAM: Me and a business partner, who took over the project when I moved on to aeroponics
+ONE-LINE SUMMARY: A WiFi smart plug that let you switch your room's lights and fan from your phone, built and sold door to door before smart plugs were common in India.
+THE PROBLEM: In 2016, controlling your home's lights and fans from a phone was something only expensive imported systems could do. I wanted something a normal household could afford and install.
 WHAT I BUILT / DID:
-- Designed the ESP8266-based plug hardware
-- Wrote the C/C++ firmware with MQTT messaging
-- Built secure WiFi credential provisioning on the device
-- Built the app / web control for remote switching and schedules
-TOOLS / TECH / SKILLS USED: ESP8266, C/C++, MQTT, PCB design, Android
-RESULTS:
-WHAT WENT WRONG / WHAT I LEARNED:
-LINKS:
+- Started with an IR remote to switch room lights and fans, then moved to an Android app talking to a WiFi microcontroller driving relays
+- Built the first working units and took them door to door to real homes
+- Redesigned the enclosure several times (thin, thick, square and triangle versions) to make it look like a product, then took it shop to shop
+- Designed stickers, packaging and three final models, and got it market ready
+- Pitched to shops and then a distributor, who asked for more testing before taking it on
+TOOLS / TECH / SKILLS USED: ESP8266, C/C++, MQTT, relays, Android, CAD, enclosure design, PCB prototyping, door-to-door sales
+RESULTS: Market-ready product · Three models · Pitched to a distributor
+WHAT WENT WRONG / WHAT I LEARNED: This went far better than the drone. Building the thing was the easy part; getting a distributor to trust a new product took more testing than I had planned for. When aeroponics came along, I handed the project to my partner and moved on.

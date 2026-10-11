@@ -1,2 +1,1 @@
-# Write 2-4 lines about this stage: what happened, what problem you solved.
-# (Lines starting with # are hidden on the site.)
+The remote became an Android app talking to a WiFi-enabled microcontroller wired to a relay. This is the first version mounted on the wall of my own room.

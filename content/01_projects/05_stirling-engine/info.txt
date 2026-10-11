@@ -1,18 +1,17 @@
-# DRAFT written by Claude from your certificate photo and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Stirling Engine
 DATES: 2015
-WHERE: PEC University of Technology, Chandigarh → presented in Paris, France
-MY ROLE: Researcher & co-author (with K. S. Ghumman)
-ONE-LINE SUMMARY: A low-cost Stirling cycle engine that turns the heat of a cooking fire into electricity for remote rural homes.
-THE PROBLEM: Many rural homes have no reliable electricity, but they cook over a fire every day. That heat is wasted.
+WHERE: PEC University of Technology, Chandigarh. Presented in Paris, France.
+MY ROLE: Researcher & co-author, with my friend K. S. Ghumman
+ONE-LINE SUMMARY: We built a Stirling engine that makes electricity from a cooking fire, then presented it at an international conference in Paris.
+THE PROBLEM: Many rural homes have no reliable electricity, but they cook over a fire every day. All that heat goes to waste.
 WHAT I BUILT / DID:
-- Designed and built a low-cost Stirling cycle engine to produce power in remote areas
-- Built a thermodynamic model of the Stirling engine, including convection heat transfer to the working fluid
-- Presented both papers at the International Congress on Energy and Environment Engineering and Management, Paris (22-24 July 2015)
+- My friend K. S. Ghumman wanted to write a research paper. We decided to build a machine that generates electricity from cooking fire, and we did.
+- Built a thermodynamic model of the engine that accounts for convection heat transfer to the working fluid
+- Wrote two papers and presented both at the International Congress on Energy and Environment Engineering and Management, Paris, 22-24 July 2015
 TOOLS / TECH / SKILLS USED: Thermodynamics, heat transfer, mechanical design, machining, research writing
 RESULTS: Oral presentation · Poster presentation · Paris 2015
-WHAT WENT WRONG / WHAT I LEARNED:
-LINKS:
+PAPERS:
+- Thermodynamic Model of Stirling Engine Considering Convection Heat Transfer to Working Fluid (oral presentation, ref. RE107)
+- Development of a Low Cost Stirling Cycle Based Engine to Produce Power in Remote Areas (poster presentation, ref. RE108)
 PHOTO CAPTIONS:
 ResearchPresentationCertificate.jpg - Certificates for the oral and poster presentations, Paris, July 2015

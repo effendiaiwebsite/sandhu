@@ -1,8 +1,9 @@
-# DRAFT written by Claude from your old site and CV. Edit anything; lines starting with # are ignored.
-
 TITLE: Sales
-DATES:
-ONE-LINE SUMMARY:
+DATES: 2018 - 2020
+WHERE: India
+ONE-LINE SUMMARY: After Chile, I realised I could build things but couldn't sell them. So I went and learned sales properly, first as a top-performing salesperson, then by training others.
 WHAT I BUILT / DID:
--
-RESULTS:
+- BYJU'S (ed-tech), 2018: sales for an education product. Ran counselling and sales sessions with parents. Top-performing salesperson across multiple sales cycles.
+- Delta School / ClickLabs, 2018 - 2020: senior sales role for a coding bootcamp. Taught junior salespeople how to pitch, monitored their daily call numbers, gave feedback, and made outreach calls myself.
+RESULTS: Top performer in multiple sales cycles · Trained a team of junior salespeople
+WHAT WENT WRONG / WHAT I LEARNED: I left BYJU'S because I didn't like selling under the guise of counselling. Being good at sales is only worth something if you believe in what you're selling. That's a line I've kept ever since.

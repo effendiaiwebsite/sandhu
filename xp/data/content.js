@@ -95,72 +95,73 @@ window.CONTENT = {
      "path": "content/01_projects/01_drone",
      "info": {
       "title": "Drone",
-      "dates": "",
-      "my role": "Designer & builder",
-      "one-line summary": "A drone I designed and built from scratch.",
-      "the problem": "",
-      "what i built / did": "-",
-      "tools / tech / skills used": "",
-      "results": "",
-      "what went wrong / what i learned": "",
-      "links": ""
+      "dates": "2013",
+      "where": "PEC University of Technology, Chandigarh",
+      "my role": "Designer & builder (personal project)",
+      "one-line summary": "A series of home-built aircraft I designed during my Mechanical Engineering degree. None of them flew, and I learned more from them than from anything that did.",
+      "the problem": "I wanted to understand flight by building it myself, not just reading about it.",
+      "what i built / did": "- Built multiple versions over the course of my B.Tech, each one fixing what the last got wrong\n- Cut the foam aerofoil wings with a foam cutter I built at home\n- Spent a long time machining a twin swashplate mechanism out of aluminum\n- Learned about balsa wood, electric motors, ESCs, and the difference between centre of weight and centre of pressure",
+      "tools / tech / skills used": "Foam board, balsa wood, brushless motors, ESCs, aluminum machining, home-built foam cutter",
+      "results": "This version didn't fly. The modified versions after it didn't fly either.",
+      "what went wrong / what i learned": "Getting the centre of weight and centre of pressure right is everything. The hardest lesson was that building is only half of engineering; the other half is testing and accepting what the test tells you. The Happy Plug, my next project, went much better because of this one.",
+      "photo captions": "ConstructionChassis.jpg - The chassis taking shape\nConstructionJoining1.jpg - Joining the wing to the body\nConstructionJoining2.jpg - Joining the wing to the body\nAeroplaneOnBed.jpg - Assembled and waiting for electronics\nAoBopen.jpg - Open top, wiring in progress\nAoBcloseupOpenTop.jpg - Close-up of the open top\nTopViewAoB.jpg - Top view\nPlaneOnTable.jpg - On the workbench\nMotorOnBase.jpg - Motor mounted on the base\nDroneOnFloor.jpg - Ready for a test\nMirrorSelfieWithDrone.jpg - Me and the plane"
      },
      "notes": "",
      "images": [
       {
        "src": "content/01_projects/01_drone/photos/AeroplaneOnBed.jpg",
        "file": "AeroplaneOnBed.jpg",
-       "caption": "Aeroplane on Bed"
+       "caption": "Assembled and waiting for electronics"
       },
       {
        "src": "content/01_projects/01_drone/photos/AoBcloseupOpenTop.jpg",
        "file": "AoBcloseupOpenTop.jpg",
-       "caption": "Ao Bcloseup Open Top"
+       "caption": "Close-up of the open top"
       },
       {
        "src": "content/01_projects/01_drone/photos/AoBopen.jpg",
        "file": "AoBopen.jpg",
-       "caption": "Ao Bopen"
+       "caption": "Open top, wiring in progress"
       },
       {
        "src": "content/01_projects/01_drone/photos/ConstructionChassis.jpg",
        "file": "ConstructionChassis.jpg",
-       "caption": "Construction Chassis"
+       "caption": "The chassis taking shape"
       },
       {
        "src": "content/01_projects/01_drone/photos/ConstructionJoining1.jpg",
        "file": "ConstructionJoining1.jpg",
-       "caption": "Construction Joining 1"
+       "caption": "Joining the wing to the body"
       },
       {
        "src": "content/01_projects/01_drone/photos/ConstructionJoining2.jpg",
        "file": "ConstructionJoining2.jpg",
-       "caption": "Construction Joining 2"
+       "caption": "Joining the wing to the body"
       },
       {
        "src": "content/01_projects/01_drone/photos/DroneOnFloor.jpg",
        "file": "DroneOnFloor.jpg",
-       "caption": "Drone on Floor"
+       "caption": "Ready for a test"
       },
       {
        "src": "content/01_projects/01_drone/photos/MirrorSelfieWithDrone.jpg",
        "file": "MirrorSelfieWithDrone.jpg",
-       "caption": "Mirror Selfie with Drone"
+       "caption": "Me and the plane"
       },
       {
        "src": "content/01_projects/01_drone/photos/MotorOnBase.jpg",
        "file": "MotorOnBase.jpg",
-       "caption": "Motor on Base"
+       "caption": "Motor mounted on the base"
       },
       {
        "src": "content/01_projects/01_drone/photos/PlaneOnTable.jpg",
        "file": "PlaneOnTable.jpg",
-       "caption": "Plane on Table"
+       "caption": "On the workbench"
       },
       {
        "src": "content/01_projects/01_drone/photos/TopViewAoB.jpg",
        "file": "TopViewAoB.jpg",
-       "caption": "Top View Ao B"
+       "caption": "Top view"
       }
      ],
      "videos": [],
@@ -175,15 +176,16 @@ window.CONTENT = {
      "path": "content/01_projects/02_happy-plug",
      "info": {
       "title": "Happy Plug",
-      "dates": "",
+      "dates": "2016 - 2017",
+      "where": "Chandigarh, India",
       "my role": "Founder, hardware & software developer",
-      "one-line summary": "A WiFi smart plug with remote control, scheduling and secure credential provisioning.",
-      "the problem": "",
-      "what i built / did": "- Designed the ESP8266-based plug hardware\n- Wrote the C/C++ firmware with MQTT messaging\n- Built secure WiFi credential provisioning on the device\n- Built the app / web control for remote switching and schedules",
-      "tools / tech / skills used": "ESP8266, C/C++, MQTT, PCB design, Android",
-      "results": "",
-      "what went wrong / what i learned": "",
-      "links": ""
+      "team": "Me and a business partner, who took over the project when I moved on to aeroponics",
+      "one-line summary": "A WiFi smart plug that let you switch your room's lights and fan from your phone, built and sold door to door before smart plugs were common in India.",
+      "the problem": "In 2016, controlling your home's lights and fans from a phone was something only expensive imported systems could do. I wanted something a normal household could afford and install.",
+      "what i built / did": "- Started with an IR remote to switch room lights and fans, then moved to an Android app talking to a WiFi microcontroller driving relays\n- Built the first working units and took them door to door to real homes\n- Redesigned the enclosure several times (thin, thick, square and triangle versions) to make it look like a product, then took it shop to shop\n- Designed stickers, packaging and three final models, and got it market ready\n- Pitched to shops and then a distributor, who asked for more testing before taking it on",
+      "tools / tech / skills used": "ESP8266, C/C++, MQTT, relays, Android, CAD, enclosure design, PCB prototyping, door-to-door sales",
+      "results": "Market-ready product · Three models · Pitched to a distributor",
+      "what went wrong / what i learned": "This went far better than the drone. Building the thing was the easy part; getting a distributor to trust a new product took more testing than I had planned for. When aeroponics came along, I handed the project to my partner and moved on."
      },
      "notes": "",
      "images": [],
@@ -197,7 +199,7 @@ window.CONTENT = {
        "title": "Idea and Sketches",
        "path": "content/01_projects/02_happy-plug/01_idea-and-sketches",
        "info": {},
-       "notes": "",
+       "notes": "I'd just come back from presenting the Stirling engine at a conference in Paris and wanted to build something people could actually use. The first idea was simple: switch the room's lights and fan on and off with an IR remote. The \"Whistle Light\" video is that first experiment.",
        "images": [
         {
          "src": "content/01_projects/02_happy-plug/01_idea-and-sketches/PaperDesign.jpg",
@@ -222,7 +224,7 @@ window.CONTENT = {
        "title": "First Prototype",
        "path": "content/01_projects/02_happy-plug/02_first-prototype",
        "info": {},
-       "notes": "",
+       "notes": "The remote became an Android app talking to a WiFi-enabled microcontroller wired to a relay. This is the first version mounted on the wall of my own room.",
        "images": [
         {
          "src": "content/01_projects/02_happy-plug/02_first-prototype/wallMounted.jpg",
@@ -241,7 +243,7 @@ window.CONTENT = {
        "title": "Hardware and Circuits",
        "path": "content/01_projects/02_happy-plug/03_hardware-and-circuits",
        "info": {},
-       "notes": "",
+       "notes": "Lots of iterations. The thin and thick prototypes were about squeezing the electronics into something that could sit on a wall. The square and triangle designs were about making it look like something you'd actually buy. Each one taught me something about what fit, what overheated and what looked right.",
        "images": [
         {
          "src": "content/01_projects/02_happy-plug/03_hardware-and-circuits/ElectronicsCompacted.jpg",
@@ -310,7 +312,7 @@ window.CONTENT = {
        "title": "App and Software",
        "path": "content/01_projects/02_happy-plug/04_app-and-software",
        "info": {},
-       "notes": "",
+       "notes": "An Android app connected to the plug over WiFi to switch it on and off. Screenshots coming soon.",
        "images": [],
        "videos": [],
        "audio": [],
@@ -323,7 +325,7 @@ window.CONTENT = {
        "title": "Testing",
        "path": "content/01_projects/02_happy-plug/05_testing",
        "info": {},
-       "notes": "",
+       "notes": "Testing happened in my own home. To connect the first model to the wall circuitry I had to chip away part of the concrete wall. Dad was not happy. He called the police. I kept the photo.",
        "images": [
         {
          "src": "content/01_projects/02_happy-plug/05_testing/dadCallsPolice.jpg",
@@ -342,7 +344,7 @@ window.CONTENT = {
        "title": "Final Product",
        "path": "content/01_projects/02_happy-plug/06_final-product",
        "info": {},
-       "notes": "",
+       "notes": "Three final models, with stickers and boxes, ready for the market. We took them shop to shop and then to a distributor, who asked for more testing before taking them on.",
        "images": [
         {
          "src": "content/01_projects/02_happy-plug/06_final-product/AllDesigns.jpg",
@@ -404,31 +406,33 @@ window.CONTENT = {
      "path": "content/01_projects/03_aeroponics-india",
      "info": {
       "title": "Aeroponics (India)",
-      "dates": "",
+      "dates": "2017",
       "where": "Chandigarh, India",
-      "my role": "Mechatronics / automation developer",
-      "one-line summary": "Automated aeroponic growing systems controlled by microcontrollers and environmental sensors.",
-      "what i built / did": "- Designed automated aeroponic systems with sensors and real-time control logic\n- Wrote C/C++ firmware for closed-loop control of nutrient cycles and climate",
-      "tools / tech / skills used": "Arduino, C/C++, sensors, pumps, misting nozzles",
-      "results": "",
-      "links": ""
+      "my role": "Co-founder, designer & builder (Frieden Electric)",
+      "one-line summary": "Automated aeroponic growing systems I designed and built in India, then sold door to door. My first ever sales orders.",
+      "the problem": "I believed India had the highest number of food-insecure people in the world, and I wanted to grow food anywhere, including remote and rural areas, without soil.",
+      "what i built / did": "- Designed the systems in CAD, then built the frames, misting and pump systems by hand\n- Wrote the microcontroller firmware that controlled the nutrient cycles and sensors\n- Built and tested two complete systems\n- Took them door to door and got real orders, my first sales ever",
+      "tools / tech / skills used": "Arduino, C/C++, sensors, pumps, misting nozzles, CAD, fabrication, door-to-door sales",
+      "results": "Two working systems · First sales orders · Led to Startup Chile funding",
+      "what went wrong / what i learned": "Before I could fulfil the orders, we got funding and an invitation to Chile. See the Frieden Electric (Startup Chile) project for how the story continues.",
+      "photo captions": "CAD1.png - CAD design of the system\nFrame1.jpg - Building the frame\nFrame2.jpg - Building the frame\nFrameWithoutPump.jpg - Frame before the pump went in\nConstruction.jpg - Construction in progress\nContructionTest.jpg - First test\nFullyFinishedPrototype1.jpg - First fully finished prototype\nTwoBuiltSystems.jpg - Both systems built\nSystemWithLabels.png - How the system works\nLargeSystematOffice.png - The large system at the office\nMicrogreensIndia.jpg - Microgreens growing\nBrochureNew.jpg - The sales brochure"
      },
      "notes": "",
      "images": [
       {
        "src": "content/01_projects/03_aeroponics-india/photos/BrochureNew.jpg",
        "file": "BrochureNew.jpg",
-       "caption": "Brochure New"
+       "caption": "The sales brochure"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/CAD1.png",
        "file": "CAD1.png",
-       "caption": "CAD 1"
+       "caption": "CAD design of the system"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/Construction.jpg",
        "file": "Construction.jpg",
-       "caption": "Construction"
+       "caption": "Construction in progress"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/ConstructionTowerModel.jpg",
@@ -438,7 +442,7 @@ window.CONTENT = {
       {
        "src": "content/01_projects/03_aeroponics-india/photos/ContructionTest.jpg",
        "file": "ContructionTest.jpg",
-       "caption": "Contruction Test"
+       "caption": "First test"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/FirstBrochureOne.jpg",
@@ -453,32 +457,32 @@ window.CONTENT = {
       {
        "src": "content/01_projects/03_aeroponics-india/photos/Frame1.jpg",
        "file": "Frame1.jpg",
-       "caption": "Frame 1"
+       "caption": "Building the frame"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/Frame2.jpg",
        "file": "Frame2.jpg",
-       "caption": "Frame 2"
+       "caption": "Building the frame"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/FrameWithoutPump.jpg",
        "file": "FrameWithoutPump.jpg",
-       "caption": "Frame Without Pump"
+       "caption": "Frame before the pump went in"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/FullyFinishedPrototype1.jpg",
        "file": "FullyFinishedPrototype1.jpg",
-       "caption": "Fully Finished Prototype 1"
+       "caption": "First fully finished prototype"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/LargeSystematOffice.png",
        "file": "LargeSystematOffice.png",
-       "caption": "Large Systemat Office"
+       "caption": "The large system at the office"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/MicrogreensIndia.jpg",
        "file": "MicrogreensIndia.jpg",
-       "caption": "Microgreens India"
+       "caption": "Microgreens growing"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/MintInTowerModel.jpg",
@@ -508,12 +512,12 @@ window.CONTENT = {
       {
        "src": "content/01_projects/03_aeroponics-india/photos/SystemWithLabels.png",
        "file": "SystemWithLabels.png",
-       "caption": "System with Labels"
+       "caption": "How the system works"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/TwoBuiltSystems.jpg",
        "file": "TwoBuiltSystems.jpg",
-       "caption": "Two Built Systems"
+       "caption": "Both systems built"
       },
       {
        "src": "content/01_projects/03_aeroponics-india/photos/WellStoredSystem.jpg",
@@ -533,61 +537,63 @@ window.CONTENT = {
      "path": "content/01_projects/04_aeroponics-chile",
      "info": {
       "title": "Frieden Electric (Startup Chile)",
-      "dates": "2017 - 2019",
+      "dates": "2017 - 2018",
       "where": "Santiago, Chile",
-      "my role": "Founder",
-      "one-line summary": "Founded Frieden Electric to help farmers get higher yields with automated aeroponics.",
-      "what i built / did": "- Built newer, improved aeroponic systems in Santiago\n- Won a $15,000 grant from the Chilean government (Startup Chile)\n- Received a one-year residency visa and co-working space in Santiago",
+      "my role": "Co-founder",
+      "one-line summary": "Took the aeroponics company to Santiago on a Startup Chile grant, built two more systems, grew microgreens and gave free samples to local shops.",
+      "the problem": "Grow food anywhere, without soil, for the people who need it most.",
+      "what i built / did": "- Won a $15,000 grant from the Chilean government through Startup Chile, plus a one-year residency visa and co-working space in Santiago\n- Built two more aeroponic systems in Chile\n- Grew microgreens and gave free samples to local shops to find customers\n- Spoke to college students about the company",
       "results": "$15,000 grant · Startup Chile · PEC incubated · Rs 10 lakh award",
+      "what went wrong / what i learned": "We didn't speak the language and knew too little about sales to turn free samples into real customers, so we came back.\nThe bigger lesson came later. I'd started this to fix food insecurity in India, thinking the problem was getting food to remote places. Over time I realised the food is usually available; a large part of the population just can't afford it. India's food insecurity is more economic than logistical. If someone can't afford a kilo of wheat or rice, they certainly can't buy and run an aeroponic system. That's why it ended.",
       "links": "The Tribune: PEC start-up wins Rs10 lakh | https://www.tribuneindia.com/news/chandigarh/pec-start-up-wins-rs10-lakh/",
-      "photo captions": "cover.jpg - Frieden Electric at Startup Chile"
+      "photo captions": "cover.jpg - The Startup Chile cohort\nCAD2.png - CAD design of the Chile system\nSystemLightsTest1.jpg - Testing the grow lights\nGrowingMicrogreens1.jpg - Microgreens growing\nMicrogreendsCloseup1.jpg - Microgreens close-up\nMicrogreensCloseup2.jpg - Microgreens close-up\nDogOnSystem1.jpg - One of our foster dogs, supervising\nDogOnSystem2.jpg - The other foster dog. Lovely company for a few months.\nInjuryFoot.jpg - Building the systems. It happens.\nInjuryCloseUp.jpg - Close-up of the same\nIfPoemForgetting.mp4 - Speaking to college students in Chile. I recited Kipling's \"If\" from memory and forgot the last verse."
      },
      "notes": "",
      "images": [
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/cover.jpg",
        "file": "cover.jpg",
-       "caption": "Frieden Electric at Startup Chile"
+       "caption": "The Startup Chile cohort"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/CAD2.png",
        "file": "CAD2.png",
-       "caption": "CAD 2"
+       "caption": "CAD design of the Chile system"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/DogOnSystem1.jpg",
        "file": "DogOnSystem1.jpg",
-       "caption": "Dog on System 1"
+       "caption": "One of our foster dogs, supervising"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/DogOnSystem2.jpg",
        "file": "DogOnSystem2.jpg",
-       "caption": "Dog on System 2"
+       "caption": "The other foster dog. Lovely company for a few months."
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/GrowingMicrogreens1.jpg",
        "file": "GrowingMicrogreens1.jpg",
-       "caption": "Growing Microgreens 1"
+       "caption": "Microgreens growing"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/InjuryCloseUp.jpg",
        "file": "InjuryCloseUp.jpg",
-       "caption": "Injury Close Up"
+       "caption": "Close-up of the same"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/InjuryFoot.jpg",
        "file": "InjuryFoot.jpg",
-       "caption": "Injury Foot"
+       "caption": "Building the systems. It happens."
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/MicrogreendsCloseup1.jpg",
        "file": "MicrogreendsCloseup1.jpg",
-       "caption": "Microgreends Closeup 1"
+       "caption": "Microgreens close-up"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/MicrogreensCloseup2.jpg",
        "file": "MicrogreensCloseup2.jpg",
-       "caption": "Microgreens Closeup 2"
+       "caption": "Microgreens close-up"
       },
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/System1.jpg",
@@ -602,14 +608,14 @@ window.CONTENT = {
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/SystemLightsTest1.jpg",
        "file": "SystemLightsTest1.jpg",
-       "caption": "System Lights Test 1"
+       "caption": "Testing the grow lights"
       }
      ],
      "videos": [
       {
        "src": "content/01_projects/04_aeroponics-chile/photos/IfPoemForgetting.mp4",
        "file": "IfPoemForgetting.mp4",
-       "caption": "If Poem Forgetting"
+       "caption": "Speaking to college students in Chile. I recited Kipling's \"If\" from memory and forgot the last verse."
       }
      ],
      "audio": [],
@@ -624,15 +630,14 @@ window.CONTENT = {
      "info": {
       "title": "Stirling Engine",
       "dates": "2015",
-      "where": "PEC University of Technology, Chandigarh → presented in Paris, France",
-      "my role": "Researcher & co-author (with K. S. Ghumman)",
-      "one-line summary": "A low-cost Stirling cycle engine that turns the heat of a cooking fire into electricity for remote rural homes.",
-      "the problem": "Many rural homes have no reliable electricity, but they cook over a fire every day. That heat is wasted.",
-      "what i built / did": "- Designed and built a low-cost Stirling cycle engine to produce power in remote areas\n- Built a thermodynamic model of the Stirling engine, including convection heat transfer to the working fluid\n- Presented both papers at the International Congress on Energy and Environment Engineering and Management, Paris (22-24 July 2015)",
+      "where": "PEC University of Technology, Chandigarh. Presented in Paris, France.",
+      "my role": "Researcher & co-author, with my friend K. S. Ghumman",
+      "one-line summary": "We built a Stirling engine that makes electricity from a cooking fire, then presented it at an international conference in Paris.",
+      "the problem": "Many rural homes have no reliable electricity, but they cook over a fire every day. All that heat goes to waste.",
+      "what i built / did": "- My friend K. S. Ghumman wanted to write a research paper. We decided to build a machine that generates electricity from cooking fire, and we did.\n- Built a thermodynamic model of the engine that accounts for convection heat transfer to the working fluid\n- Wrote two papers and presented both at the International Congress on Energy and Environment Engineering and Management, Paris, 22-24 July 2015",
       "tools / tech / skills used": "Thermodynamics, heat transfer, mechanical design, machining, research writing",
       "results": "Oral presentation · Poster presentation · Paris 2015",
-      "what went wrong / what i learned": "",
-      "links": "",
+      "papers": "- Thermodynamic Model of Stirling Engine Considering Convection Heat Transfer to Working Fluid (oral presentation, ref. RE107)\n- Development of a Low Cost Stirling Cycle Based Engine to Produce Power in Remote Areas (poster presentation, ref. RE108)",
       "photo captions": "ResearchPresentationCertificate.jpg - Certificates for the oral and poster presentations, Paris, July 2015"
      },
      "notes": "",
@@ -699,9 +704,11 @@ window.CONTENT = {
        "path": "content/03_work-experience/construction/01_labourer",
        "info": {
         "title": "Labourer",
-        "dates": "2019 -",
-        "one-line summary": "Came to Canada and started from the ground up.",
-        "what i built / did": "-"
+        "dates": "2019 - 2020",
+        "where": "Workforce Staffing Solutions, Lower Mainland, BC",
+        "one-line summary": "My first year in Canada. Started from the bottom, got paid every evening, and learned how a construction site actually works.",
+        "what i built / did": "- General labour on construction sites across the Lower Mainland, a different site most days\n- The agency paid wages every evening, so every day was a fresh start and a fresh test\n- Worked hard, learned fast, and earned the trust that led to the next step up",
+        "what went wrong / what i learned": "Arriving with an engineering degree and a startup behind me and starting as a labourer was humbling. It was also the best education in how things really get built, and in respecting the people who build them."
        },
        "notes": "",
        "images": [
@@ -733,9 +740,11 @@ window.CONTENT = {
        "path": "content/03_work-experience/construction/02_traffic-control",
        "info": {
         "title": "Traffic Control Person",
-        "dates": "",
-        "one-line summary": "",
-        "what i built / did": "-"
+        "dates": "2020 - 2021",
+        "where": "Lower Mainland, BC",
+        "one-line summary": "A year keeping traffic, pedestrians and crews safe around construction zones at more than ten sites.",
+        "what i built / did": "- Regulated traffic around active construction sites\n- Kept pedestrians and workers safe in high-risk construction zones\n- Worked at over ten sites across the Lower Mainland",
+        "what went wrong / what i learned": "Easier on the body than labouring, but the long stretches of standing still and staying alert turned out to be almost meditative. It taught me patience, and how to stay sharp when nothing is happening, which is exactly when things go wrong."
        },
        "notes": "",
        "images": [],
@@ -751,16 +760,20 @@ window.CONTENT = {
        "path": "content/03_work-experience/construction/03_safety-officer",
        "info": {
         "title": "Construction Safety Officer",
-        "dates": "",
-        "one-line summary": "",
-        "what i built / did": "-"
+        "dates": "2023 - present",
+        "where": "Lower Mainland, BC",
+        "one-line summary": "Keeping workers safe on construction sites: inspections, orientations, hazard control and incident investigations.",
+        "what i built / did": "- Daily site inspections, spotting hazards and working with the trades to fix them on the spot\n- Running orientations so new workers know the site's rules and the dangers they might not see\n- Coordinating between trades to keep the site compliant with BC's Occupational Health and Safety Regulation\n- Investigating incidents, writing the reports and making sure corrective actions actually happen\n- Keeping the paperwork methodical and up to date, on Procore and on paper",
+        "tools / tech / skills used": "BCIT Construction Safety Officer certificate, OFA 3, OHSR, Procore, incident investigation, toolbox talks",
+        "what went wrong / what i learned": "I enjoy this work. It's methodical, it matters, and most of the job is noticing the hazard before it becomes an incident and telling someone about a danger they didn't know was there. It's also what pointed me toward cybersecurity: the same mindset, applied to systems instead of sites.",
+        "photo captions": "ConstructionPosing.jpg - On site"
        },
        "notes": "",
        "images": [
         {
          "src": "content/03_work-experience/construction/03_safety-officer/ConstructionPosing.jpg",
          "file": "ConstructionPosing.jpg",
-         "caption": "Construction Posing"
+         "caption": "On site"
         }
        ],
        "videos": [],
@@ -777,10 +790,12 @@ window.CONTENT = {
      "path": "content/03_work-experience/sales",
      "info": {
       "title": "Sales",
-      "dates": "",
-      "one-line summary": "",
-      "what i built / did": "-",
-      "results": ""
+      "dates": "2018 - 2020",
+      "where": "India",
+      "one-line summary": "After Chile, I realised I could build things but couldn't sell them. So I went and learned sales properly, first as a top-performing salesperson, then by training others.",
+      "what i built / did": "- BYJU'S (ed-tech), 2018: sales for an education product. Ran counselling and sales sessions with parents. Top-performing salesperson across multiple sales cycles.\n- Delta School / ClickLabs, 2018 - 2020: senior sales role for a coding bootcamp. Taught junior salespeople how to pitch, monitored their daily call numbers, gave feedback, and made outreach calls myself.",
+      "results": "Top performer in multiple sales cycles · Trained a team of junior salespeople",
+      "what went wrong / what i learned": "I left BYJU'S because I didn't like selling under the guise of counselling. Being good at sales is only worth something if you believe in what you're selling. That's a line I've kept ever since."
      },
      "notes": "",
      "images": [],
@@ -831,6 +846,32 @@ window.CONTENT = {
    "docs": [],
    "links": [],
    "children": [
+    {
+     "name": "a2z-pallets",
+     "title": "A2Z Pallets",
+     "path": "content/04_freelance-websites/a2z-pallets",
+     "info": {
+      "title": "A2Z Pallets",
+      "url": "https://www.a2zpalletsltd.com/",
+      "dates": "2022",
+      "one-line summary": "Website for a Surrey wooden pallet manufacturer with 20+ years in the business: products, custom orders, testimonials and a quote request form.",
+      "what i built / did": "- Built the site for a local manufacturing business that had never had one\n- Product and services pages, customer testimonials and a get-a-quote form that brings in custom orders",
+      "tools / tech / skills used": "HTML, CSS, JavaScript, hosting, SSL, DNS"
+     },
+     "notes": "",
+     "images": [
+      {
+       "src": "content/04_freelance-websites/a2z-pallets/cover.jpg",
+       "file": "cover.jpg",
+       "caption": ""
+      }
+     ],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
     {
      "name": "gator-bookkeeping",
      "title": "Gator Bookkeeping",
@@ -942,6 +983,58 @@ window.CONTENT = {
      "docs": [],
      "links": [],
      "children": []
+    },
+    {
+     "name": "rts-reliable-taxes",
+     "title": "RTS Reliable Tax Services",
+     "path": "content/04_freelance-websites/rts-reliable-taxes",
+     "info": {
+      "title": "RTS Reliable Tax Services",
+      "url": "https://rtsreliabletaxes.com/",
+      "dates": "2022",
+      "one-line summary": "Website for a tax preparation service: services, pricing, downloadable tax forms and online appointment booking.",
+      "what i built / did": "- Designed and built the full site with a services catalogue, pricing page and forms library\n- Online appointment booking so clients can schedule their tax consultation directly",
+      "tools / tech / skills used": "HTML, CSS, JavaScript, hosting, SSL, DNS"
+     },
+     "notes": "",
+     "images": [
+      {
+       "src": "content/04_freelance-websites/rts-reliable-taxes/cover.png",
+       "file": "cover.png",
+       "caption": ""
+      }
+     ],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
+    {
+     "name": "walia-tax",
+     "title": "Walia Tax and Accounting",
+     "path": "content/04_freelance-websites/walia-tax",
+     "info": {
+      "title": "Walia Tax and Accounting",
+      "url": "https://waliatax.com/",
+      "dates": "2022",
+      "one-line summary": "Website for a tax and accounting firm in BC: services, pricing, secure document upload and online appointment booking.",
+      "what i built / did": "- Designed and built the full site, from the landing page to the appointment and upload flows\n- Clients can upload their tax documents and book an appointment without phoning the office",
+      "tools / tech / skills used": "HTML, CSS, JavaScript, hosting, SSL, DNS"
+     },
+     "notes": "",
+     "images": [
+      {
+       "src": "content/04_freelance-websites/walia-tax/cover.png",
+       "file": "cover.png",
+       "caption": ""
+      }
+     ],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
     }
    ]
   },
@@ -1003,12 +1096,11 @@ window.CONTENT = {
       "title": "TradesBook",
       "dates": "2021",
       "my role": "Android developer",
-      "one-line summary": "An Android app for construction crews to check in, see their tasks, fill out the daily COVID questionnaire and track attendance.",
-      "the problem": "",
-      "what i built / did": "- Email/password login and registration with Firebase Authentication and email verification\n- Lockout after too many failed login attempts\n- Worker dashboard with Check In, Tasks, COVID Questionnaire and Attendance",
+      "one-line summary": "A workforce-management app for construction companies, built right after I arrived in Canada to sell to the companies I was working for.",
+      "the problem": "On the sites I was working, check-ins, task lists, COVID questionnaires and attendance were all paper or word of mouth. I thought a simple app could replace all of it.",
+      "what i built / did": "- Email/password login and registration with Firebase Authentication and email verification\n- Lockout after too many failed login attempts\n- Worker dashboard with Check In, Tasks, COVID Questionnaire and Attendance\n- Showed the prototype to the construction companies I was working with",
       "tools / tech / skills used": "Android, Java, XML, Firebase Authentication, Android Studio",
-      "url": "",
-      "github": "",
+      "what went wrong / what i learned": "The companies weren't excited. When I tried selling websites instead, I found a far more receptive market, so I followed it. TradesBook is the reason I became a freelance web developer.",
       "photo captions": "tradesbookLogin.png - Login screen\ntradesbookLogin1.png - Login screen\ntradesbookDashboard.png - Worker dashboard, built in Android Studio"
      },
      "notes": "",
@@ -1105,10 +1197,12 @@ window.CONTENT = {
   },
   {
    "name": "07_music",
-   "title": "Music",
+   "title": "My Music",
    "path": "content/07_music",
    "info": {
-    "track captions": ""
+    "title": "My Music",
+    "one-line summary": "Songs I've written and performed. More coming from Instagram and Facebook.",
+    "track captions": "PunjabiSongOnLabor.mp4 - Punjabi song on labour"
    },
    "notes": "",
    "images": [],
@@ -1116,7 +1210,7 @@ window.CONTENT = {
     {
      "src": "content/07_music/PunjabiSongOnLabor.mp4",
      "file": "PunjabiSongOnLabor.mp4",
-     "caption": "Punjabi Song on Labor"
+     "caption": "Punjabi song on labour"
     }
    ],
    "audio": [],
@@ -1152,7 +1246,24 @@ window.CONTENT = {
    "images": [],
    "videos": [],
    "audio": [],
-   "docs": [],
+   "docs": [
+    {
+     "src": "content/09_ideas-and-collabs/01_rural-job-training-schools.txt",
+     "file": "01_rural-job-training-schools.txt",
+     "caption": "Rural Job Training Schools",
+     "ext": "txt",
+     "title": "Job-training schools for rural India",
+     "fields": {
+      "title": "Job-training schools for rural India",
+      "date": "2026",
+      "the problem": "When I built aeroponic systems to fight food insecurity in India, I learned the real problem wasn't getting food to people, it was that they couldn't afford it. Rural India doesn't lack food so much as it lacks income, and income comes from skills employers will pay for.",
+      "the idea": "Build schools in rural India that teach job-related skills: trades, technical and practical training that leads directly to work. Not degrees, jobs.",
+      "looking for": "An investing partner. I bring the engineering, the building, the sales experience and the first-hand understanding of the problem. I'm looking for someone who wants to fund it and build it with me.",
+      "how to reach me": "Click Reply, or email satindersandhu138@gmail.com"
+     },
+     "text": ""
+    }
+   ],
    "links": [],
    "children": []
   },

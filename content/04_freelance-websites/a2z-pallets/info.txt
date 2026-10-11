@@ -1,0 +1,8 @@
+TITLE: A2Z Pallets
+URL: https://www.a2zpalletsltd.com/
+DATES: 2022
+ONE-LINE SUMMARY: Website for a Surrey wooden pallet manufacturer with 20+ years in the business: products, custom orders, testimonials and a quote request form.
+WHAT I BUILT / DID:
+- Built the site for a local manufacturing business that had never had one
+- Product and services pages, customer testimonials and a get-a-quote form that brings in custom orders
+TOOLS / TECH / SKILLS USED: HTML, CSS, JavaScript, hosting, SSL, DNS

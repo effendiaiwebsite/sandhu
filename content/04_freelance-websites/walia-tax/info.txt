@@ -1,0 +1,8 @@
+TITLE: Walia Tax and Accounting
+URL: https://waliatax.com/
+DATES: 2022
+ONE-LINE SUMMARY: Website for a tax and accounting firm in BC: services, pricing, secure document upload and online appointment booking.
+WHAT I BUILT / DID:
+- Designed and built the full site, from the landing page to the appointment and upload flows
+- Clients can upload their tax documents and book an appointment without phoning the office
+TOOLS / TECH / SKILLS USED: HTML, CSS, JavaScript, hosting, SSL, DNS

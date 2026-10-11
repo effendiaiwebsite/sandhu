@@ -1,0 +1,15 @@
+TITLE: Phishing Email Analysis
+STATUS: In progress
+DATES: 2026
+MY ROLE: Analyst
+ONE-LINE SUMMARY: Taking a real phishing email apart, header by header, to show how it tried to fool me and how to spot the next one.
+THE PROBLEM: Phishing is still the most common way into a company. Being able to read an email's headers and links is a basic skill for any security role.
+WHAT I BUILT / DID:
+- Pulled the full headers of a real phishing email I received
+- Traced the sending server, SPF/DKIM/DMARC results and the mismatched Reply-To
+- Unpacked the links without clicking them, using URL decoders and a sandbox
+- Wrote up the red flags a normal reader could have caught
+TOOLS / TECH / SKILLS USED: Email headers, SPF, DKIM, DMARC, MXToolbox, VirusTotal, URL decoding, sandboxing
+RESULTS: Coming soon
+WHAT WENT WRONG / WHAT I LEARNED: Coming soon
+# Add screenshots with any real addresses blurred, plus the write-up as a PDF or Word file.

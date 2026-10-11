@@ -1,0 +1,13 @@
+TITLE: TryHackMe
+STATUS: In progress
+DATES: 2026
+MY ROLE: Student
+ONE-LINE SUMMARY: Hands-on security training, one room at a time. Progress tracked publicly on my TryHackMe profile.
+WHAT I BUILT / DID:
+- Working through a learning path, with notes on each room
+- Badges and completed rooms show on the profile below
+TOOLS / TECH / SKILLS USED: Linux, networking, Nmap, Burp Suite, Metasploit, privilege escalation
+RESULTS: Coming soon
+LINKS:
+# TryHackMe profile | https://tryhackme.com/p/your-username
+# Add a screenshot of your profile or a completed path.

@@ -1,0 +1,14 @@
+TITLE: What Does a Smart Plug Leak?
+STATUS: In progress
+DATES: 2026
+MY ROLE: Investigator (and the person who built the plug)
+ONE-LINE SUMMARY: Capturing the network traffic of my own Happy Plug with Wireshark to see what a cheap IoT device gives away.
+THE PROBLEM: I built a WiFi smart plug in 2016 without thinking much about security. Now I know better, and I want to see exactly what it was broadcasting.
+WHAT I BUILT / DID:
+- Put the plug on an isolated network and captured its traffic with Wireshark
+- Looked at the WiFi provisioning, the MQTT messages and anything sent in plain text
+- Compared it with what a modern, properly secured device should do
+TOOLS / TECH / SKILLS USED: Wireshark, MQTT, ESP8266, network segmentation, IoT security
+RESULTS: Coming soon
+WHAT WENT WRONG / WHAT I LEARNED: Coming soon
+# Add Wireshark screenshots and a short write-up.

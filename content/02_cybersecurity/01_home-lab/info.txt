@@ -1,0 +1,15 @@
+TITLE: Home Lab
+STATUS: In progress
+DATES: 2026
+MY ROLE: Builder & administrator
+ONE-LINE SUMMARY: A Windows domain and a Kali attack box running in VirtualBox on my own machine, so I can practise attacking and defending without touching anything real.
+THE PROBLEM: You can't learn security operations from slides. I wanted a safe network I could break, fix and monitor.
+WHAT I BUILT / DID:
+- Windows Server domain controller with Active Directory, DNS and DHCP
+- Windows 10/11 client joined to the domain, with a few test users and groups
+- Kali Linux attack box on the same virtual network
+- Snapshots of every machine so I can reset after each exercise
+TOOLS / TECH / SKILLS USED: VirtualBox, Windows Server, Active Directory, DNS, DHCP, Kali Linux, Nmap, Wireshark
+RESULTS: Coming soon
+WHAT WENT WRONG / WHAT I LEARNED: Coming soon
+# Add screenshots to this folder: network diagram, AD Users and Computers, a successful Nmap scan from Kali, etc.

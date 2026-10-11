@@ -1,0 +1,14 @@
+TITLE: USB Stick Forensics
+STATUS: In progress
+DATES: 2026
+MY ROLE: Forensic examiner
+ONE-LINE SUMMARY: Imaging an old USB stick and recovering its deleted files with Autopsy, the way a digital forensics investigation would.
+THE PROBLEM: Deleted doesn't mean gone. Showing what can be recovered from a drive someone thought was empty is the clearest demo of forensic work there is.
+WHAT I BUILT / DID:
+- Created a forensic image of the USB stick with a write blocker and verified its hash
+- Loaded the image into Autopsy and recovered deleted files, timestamps and metadata
+- Documented the chain of custody and findings in a short report
+TOOLS / TECH / SKILLS USED: Autopsy, FTK Imager, hashing (MD5/SHA-256), write blockers, chain of custody, report writing
+RESULTS: Coming soon
+WHAT WENT WRONG / WHAT I LEARNED: Coming soon
+# Add Autopsy screenshots (nothing personal in them) and the report as a PDF.

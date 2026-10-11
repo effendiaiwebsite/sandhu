@@ -672,7 +672,127 @@ window.CONTENT = {
    "audio": [],
    "docs": [],
    "links": [],
-   "children": []
+   "children": [
+    {
+     "name": "01_home-lab",
+     "title": "Home Lab",
+     "path": "content/02_cybersecurity/01_home-lab",
+     "info": {
+      "title": "Home Lab",
+      "status": "In progress",
+      "dates": "2026",
+      "my role": "Builder & administrator",
+      "one-line summary": "A Windows domain and a Kali attack box running in VirtualBox on my own machine, so I can practise attacking and defending without touching anything real.",
+      "the problem": "You can't learn security operations from slides. I wanted a safe network I could break, fix and monitor.",
+      "what i built / did": "- Windows Server domain controller with Active Directory, DNS and DHCP\n- Windows 10/11 client joined to the domain, with a few test users and groups\n- Kali Linux attack box on the same virtual network\n- Snapshots of every machine so I can reset after each exercise",
+      "tools / tech / skills used": "VirtualBox, Windows Server, Active Directory, DNS, DHCP, Kali Linux, Nmap, Wireshark",
+      "results": "Coming soon",
+      "what went wrong / what i learned": "Coming soon"
+     },
+     "notes": "",
+     "images": [],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
+    {
+     "name": "02_phishing-email-analysis",
+     "title": "Phishing Email Analysis",
+     "path": "content/02_cybersecurity/02_phishing-email-analysis",
+     "info": {
+      "title": "Phishing Email Analysis",
+      "status": "In progress",
+      "dates": "2026",
+      "my role": "Analyst",
+      "one-line summary": "Taking a real phishing email apart, header by header, to show how it tried to fool me and how to spot the next one.",
+      "the problem": "Phishing is still the most common way into a company. Being able to read an email's headers and links is a basic skill for any security role.",
+      "what i built / did": "- Pulled the full headers of a real phishing email I received\n- Traced the sending server, SPF/DKIM/DMARC results and the mismatched Reply-To\n- Unpacked the links without clicking them, using URL decoders and a sandbox\n- Wrote up the red flags a normal reader could have caught",
+      "tools / tech / skills used": "Email headers, SPF, DKIM, DMARC, MXToolbox, VirusTotal, URL decoding, sandboxing",
+      "results": "Coming soon",
+      "what went wrong / what i learned": "Coming soon"
+     },
+     "notes": "",
+     "images": [],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
+    {
+     "name": "03_wireshark-smart-plug",
+     "title": "What Does a Smart Plug Leak?",
+     "path": "content/02_cybersecurity/03_wireshark-smart-plug",
+     "info": {
+      "title": "What Does a Smart Plug Leak?",
+      "status": "In progress",
+      "dates": "2026",
+      "my role": "Investigator (and the person who built the plug)",
+      "one-line summary": "Capturing the network traffic of my own Happy Plug with Wireshark to see what a cheap IoT device gives away.",
+      "the problem": "I built a WiFi smart plug in 2016 without thinking much about security. Now I know better, and I want to see exactly what it was broadcasting.",
+      "what i built / did": "- Put the plug on an isolated network and captured its traffic with Wireshark\n- Looked at the WiFi provisioning, the MQTT messages and anything sent in plain text\n- Compared it with what a modern, properly secured device should do",
+      "tools / tech / skills used": "Wireshark, MQTT, ESP8266, network segmentation, IoT security",
+      "results": "Coming soon",
+      "what went wrong / what i learned": "Coming soon"
+     },
+     "notes": "",
+     "images": [],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
+    {
+     "name": "04_autopsy-usb-forensics",
+     "title": "USB Stick Forensics",
+     "path": "content/02_cybersecurity/04_autopsy-usb-forensics",
+     "info": {
+      "title": "USB Stick Forensics",
+      "status": "In progress",
+      "dates": "2026",
+      "my role": "Forensic examiner",
+      "one-line summary": "Imaging an old USB stick and recovering its deleted files with Autopsy, the way a digital forensics investigation would.",
+      "the problem": "Deleted doesn't mean gone. Showing what can be recovered from a drive someone thought was empty is the clearest demo of forensic work there is.",
+      "what i built / did": "- Created a forensic image of the USB stick with a write blocker and verified its hash\n- Loaded the image into Autopsy and recovered deleted files, timestamps and metadata\n- Documented the chain of custody and findings in a short report",
+      "tools / tech / skills used": "Autopsy, FTK Imager, hashing (MD5/SHA-256), write blockers, chain of custody, report writing",
+      "results": "Coming soon",
+      "what went wrong / what i learned": "Coming soon"
+     },
+     "notes": "",
+     "images": [],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    },
+    {
+     "name": "05_tryhackme",
+     "title": "TryHackMe",
+     "path": "content/02_cybersecurity/05_tryhackme",
+     "info": {
+      "title": "TryHackMe",
+      "status": "In progress",
+      "dates": "2026",
+      "my role": "Student",
+      "one-line summary": "Hands-on security training, one room at a time. Progress tracked publicly on my TryHackMe profile.",
+      "what i built / did": "- Working through a learning path, with notes on each room\n- Badges and completed rooms show on the profile below",
+      "tools / tech / skills used": "Linux, networking, Nmap, Burp Suite, Metasploit, privilege escalation",
+      "results": "Coming soon",
+      "links": ""
+     },
+     "notes": "",
+     "images": [],
+     "videos": [],
+     "audio": [],
+     "docs": [],
+     "links": [],
+     "children": []
+    }
+   ]
   },
   {
    "name": "03_work-experience",
@@ -1269,12 +1389,38 @@ window.CONTENT = {
   },
   {
    "name": "10_recycle-bin-bloopers",
-   "title": "Recycle Bin Bloopers",
+   "title": "Recycle Bin",
    "path": "content/10_recycle-bin-bloopers",
-   "info": {},
+   "info": {
+    "title": "Recycle Bin",
+    "one-line summary": "Things that didn't go to plan. Every one of them taught me something.",
+    "photo captions": "01_drone.jpg - Did not fly. Neither did the next three.\n02_dad-calls-police.jpg - Chipped the wall to wire in the first Happy Plug. Dad called the police.\n03_foot.jpg - Building aeroponic systems in Chile. The foot lost.\n04_if-poem.mp4 - Reciting \"If\" to college students in Chile. Forgot the last verse."
+   },
    "notes": "",
-   "images": [],
-   "videos": [],
+   "images": [
+    {
+     "src": "content/10_recycle-bin-bloopers/01_drone.jpg",
+     "file": "01_drone.jpg",
+     "caption": "Did not fly. Neither did the next three."
+    },
+    {
+     "src": "content/10_recycle-bin-bloopers/02_dad-calls-police.jpg",
+     "file": "02_dad-calls-police.jpg",
+     "caption": "Chipped the wall to wire in the first Happy Plug. Dad called the police."
+    },
+    {
+     "src": "content/10_recycle-bin-bloopers/03_foot.jpg",
+     "file": "03_foot.jpg",
+     "caption": "Building aeroponic systems in Chile. The foot lost."
+    }
+   ],
+   "videos": [
+    {
+     "src": "content/10_recycle-bin-bloopers/04_if-poem.mp4",
+     "file": "04_if-poem.mp4",
+     "caption": "Reciting \"If\" to college students in Chile. Forgot the last verse."
+    }
+   ],
    "audio": [],
    "docs": [],
    "links": [],
